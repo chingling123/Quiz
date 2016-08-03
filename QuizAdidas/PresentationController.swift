@@ -23,6 +23,9 @@ class PresentationController: UIViewController {
             imgBG.image = UIImage(named: "bg3EN")
             btnProsseguir.setImage(UIImage(named: "bt_continueEN"), forState: <#T##UIControlState#>)
             
+        }else{
+            imgBG.image = UIImage(named: "bg3")
+            btnProsseguir.setImage(UIImage(named: "bt_prosseguirPT"), forState: <#T##UIControlState#>)
         }
         
         // Do any additional setup after loading the view, typically from a nib.

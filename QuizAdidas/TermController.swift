@@ -34,6 +34,8 @@ class TermController: UIViewController, UIScrollViewDelegate {
         }else{
             imgBG.image = UIImage(named: "bg10PT")
             btnTermAcpet.setImage(UIImage(named: "bt_aceitoPT"), forState: UIControlState.Normal)
+            textRules.hidden = false
+            textRulesEN.hidden = true
         }
         
         

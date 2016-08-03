@@ -15,6 +15,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     @IBOutlet weak var imgBack: UIImageView!
     @IBOutlet weak var btnValidar: UIButton!
     @IBOutlet weak var lblDigite: UILabel!
+    @IBOutlet weak var btnBack: UIButton!
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
@@ -30,12 +31,15 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
             txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
             //txtCPF.maskTemplate = "123.456.789-00"
             txtCPF.maskDelegate = self
+            btnBack.setImage(UIImage(named: "bt_back-1EN"), forState: UIControlState.Normal)
+            
         }else{
             btnValidar.setImage(UIImage(named: "bt_validar-1PT"), forState: UIControlState.Normal)
             lblDigite.text = "DIGITE SEU CPF UTILIZADO NO CADASTRO DO TOTEM ANTERIOR"
             txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
             //txtCPF.maskTemplate = "123.456.789-00"
             txtCPF.maskDelegate = self
+            btnBack.setImage(UIImage(named: "bt_voltarPT"), forState: UIControlState.Normal)
         }
         
         lblWarning.hidden = true

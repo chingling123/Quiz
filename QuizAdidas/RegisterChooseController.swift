@@ -24,6 +24,10 @@ class RegisterChooseController: UIViewController {
             btnSemSMS.setImage(UIImage(named: "bt_resendEN"), forState: UIControlState.Normal)
             btnJaCadastrado.setImage(UIImage(named: "bt_already_registeredEN"), forState: UIControlState.Normal)
             btnNaoCadastrado.setImage(UIImage(named: "bt_not_registeredEN"), forState: UIControlState.Normal)
+        }else{
+            btnSemSMS.setImage(UIImage(named: "bt_nao_recebi_smsPT"), forState: UIControlState.Normal)
+            btnJaCadastrado.setImage(UIImage(named: "bt_tenho_cadastroPT"), forState: UIControlState.Normal)
+            btnNaoCadastrado.setImage(UIImage(named: "bt_nao_tenho_cadastroPT"), forState: UIControlState.Normal)
         }
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(

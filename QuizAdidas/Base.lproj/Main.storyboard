@@ -84,19 +84,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtg-mm-CGs">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="btnIdle:" destination="TuD-p4-UeQ" eventType="touchUpInside" id="iJK-2F-d6q"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7I1-qd-RWG" userLabel="Prosseguir">
                                 <rect key="frame" x="741" y="690" width="198" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_prosseguirPT"/>
                                 <connections>
                                     <segue destination="mHy-c6-C8z" kind="push" id="9OS-Tx-xad"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtg-mm-CGs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="TuD-p4-UeQ" eventType="touchUpInside" id="iJK-2F-d6q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -467,7 +467,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                 <rect key="frame" x="124" y="192" width="782" height="470"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">REGULATIONS
+                                <string key="text">REGULATIONS
 CONTEST “BOLA PRA JOGO”
 
 1. PROMOTING COMPANY (Trustee). HAVAS SPORTS &amp; ENTRETENIMENTO BRASIL LTDA., hereby known as “PROMOTER”, inscribed in the CNPJ/MF under the number 12.891.442/0001-54, established at Avenida Magalhães de Castro, 4800, 22° floor, Continental Tower, CEP 05502-001, São Paulo,  SP, Brazil.
@@ -581,7 +581,7 @@ I authorize adidas group ("LICENSEE"), a limited liability company, headquartere
 
 
 The parties claim to be free and unhindered to execute this term, with no charge, encumbrance or obligation to prevent them from doing so. Parties undertake to comply with the provisions herein by themselves, their heirs and legal successors.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -788,6 +788,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                     <navigationItem key="navigationItem" id="ZM5-LC-Mtw"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="MiniTextPoints" destination="Npz-JC-t5a" id="Y7E-ok-iKB"/>
                         <outlet property="btnEncerrar" destination="YCE-1r-DXz" id="A8H-oo-DjQ"/>
                         <outlet property="btnProsseguir" destination="zFG-gQ-e0G" id="p0R-l1-jCY"/>
                         <outlet property="btnQuero" destination="Aih-PJ-4iS" id="077-KJ-HYE"/>
@@ -897,6 +898,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imgBG" destination="QoA-iK-qzN" id="3XW-E6-I1H"/>
+                        <outlet property="lblObrigado" destination="9bV-2O-PX0" id="9pa-sb-g7L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxQ-c7-WjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -962,6 +964,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                     <navigationItem key="navigationItem" id="phd-7l-zvA"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="bDq-yL-9KJ" id="LCY-ny-pO0"/>
                         <outlet property="btnValidar" destination="amU-OL-sUe" id="8ph-zE-R5t"/>
                         <outlet property="imgBack" destination="VpR-nf-nA6" id="Ass-Ma-aMB"/>
                         <outlet property="lblDigite" destination="Hyx-eq-04L" id="jDf-j3-O0M"/>
@@ -982,10 +985,6 @@ The parties claim to be free and unhindered to execute this term, with no charge
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="rLF-gH-kzK">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23D-q6-4w2">
                                 <rect key="frame" x="318" y="511" width="386" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -993,10 +992,18 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <action selector="okAction:" destination="UKy-is-yC3" eventType="touchUpInside" id="GST-2S-OzB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="rLF-gH-kzK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yTM-ld-qlC"/>
+                    <connections>
+                        <outlet property="imgBG" destination="23D-q6-4w2" id="2eQ-Z1-zRd"/>
+                        <outlet property="imgBg" destination="rLF-gH-kzK" id="X7S-Mg-8fe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEE-yg-pU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1010,10 +1017,6 @@ The parties claim to be free and unhindered to execute this term, with no charge
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="OtG-nk-73I">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
                                 <rect key="frame" x="694" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1022,8 +1025,8 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <action selector="voltarAction:" destination="3sf-jK-N27" eventType="touchUpInside" id="hHE-Um-Ou1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
-                                <rect key="frame" x="96" y="335" width="833" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
+                                <rect key="frame" x="96" y="292" width="833" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.52401885078092769" green="0.5251997995364216" blue="0.54322091817692297" alpha="1" colorSpace="calibratedRGB"/>
@@ -1052,14 +1055,21 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="OtG-nk-73I">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Hf-h4-1y5"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnReenviar" destination="fTp-ow-Tc6" id="2Vc-3s-Nor"/>
+                        <outlet property="btnVoltar" destination="c4g-87-1E6" id="vgF-o2-MLd"/>
                         <outlet property="imgBack" destination="OtG-nk-73I" id="92c-kL-m5r"/>
                         <outlet property="lblAlert" destination="HuK-ay-FeI" id="uO2-7f-DCa"/>
+                        <outlet property="lblSMS" destination="hom-bb-5B6" id="6d3-mj-Bw0"/>
                         <outlet property="txtSMS" destination="eZW-vL-hYV" id="grw-pG-KmE"/>
                         <segue destination="UKy-is-yC3" kind="push" identifier="smsText" id="dyI-L0-AEM"/>
                     </connections>
@@ -1137,6 +1147,65 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
+                                <rect key="frame" x="235" y="282" width="569" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbm-ld-7jM">
+                                        <rect key="frame" x="282" y="265" width="287" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="NÃO">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mhV-pJ-7cr" kind="push" identifier="nao" id="ZLa-se-8z8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sz-j0-CFh">
+                                        <rect key="frame" x="22" y="0.0" width="522" height="182"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lt-7D-fSr">
+                                        <rect key="frame" x="0.0" y="96" width="569" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Dh-gV-tB2">
+                                        <rect key="frame" x="0.0" y="263" width="569" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Epv-RF-pea">
+                                        <rect key="frame" x="282" y="264" width="1" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HRe-GB-WGT">
+                                        <rect key="frame" x="0.0" y="264" width="283" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="SIM">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="a5e-NO-3Jw" kind="push" identifier="sim" id="mXI-zT-xft"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.0" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" id="jYv-Kf-MF2" userLabel="ViewtemCerteza">
                                 <rect key="frame" x="346" y="318" width="363" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1189,72 +1258,20 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </subviews>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
-                                <rect key="frame" x="235" y="282" width="569" height="332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbm-ld-7jM">
-                                        <rect key="frame" x="282" y="265" width="287" height="67"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <state key="normal" title="NÃO">
-                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="mhV-pJ-7cr" kind="push" identifier="nao" id="ZLa-se-8z8"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sz-j0-CFh">
-                                        <rect key="frame" x="22" y="0.0" width="522" height="171"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lt-7D-fSr">
-                                        <rect key="frame" x="0.0" y="96" width="569" height="171"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Dh-gV-tB2">
-                                        <rect key="frame" x="0.0" y="263" width="569" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Epv-RF-pea">
-                                        <rect key="frame" x="282" y="264" width="1" height="69"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HRe-GB-WGT">
-                                        <rect key="frame" x="0.0" y="264" width="283" height="68"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <state key="normal" title="SIM">
-                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="a5e-NO-3Jw" kind="push" identifier="sim" id="mXI-zT-xft"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.65098039215686276" green="0.0" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vhs-qu-Fy9"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="JEA-Db-9US" id="MOo-4C-giF"/>
+                        <outlet property="btnNao" destination="hbm-ld-7jM" id="xnt-iM-GE7"/>
+                        <outlet property="btnSim" destination="HRe-GB-WGT" id="eQw-ii-EHe"/>
+                        <outlet property="btnYes" destination="LW2-56-T3a" id="JZj-Rr-MPb"/>
                         <outlet property="imgBG" destination="ryY-JH-04L" id="Cru-iW-rhy"/>
+                        <outlet property="lblAgendeSuaParticipação" destination="1Lt-7D-fSr" id="vIj-fT-1K0"/>
+                        <outlet property="lblQuerPedalar" destination="8Sz-j0-CFh" id="z7w-ux-Ybh"/>
+                        <outlet property="lblTemCerteza" destination="z8p-EZ-knZ" id="bRv-rL-tka"/>
                         <outlet property="viewGostaria" destination="y7W-aZ-zBe" id="bFe-Ve-EsY"/>
                         <outlet property="viewTemCerteza" destination="jYv-Kf-MF2" id="VQk-RL-WpP"/>
                     </connections>
@@ -1275,29 +1292,22 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA CONTINUAR NO JOGO," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0S-mq-ZwD">
-                                <rect key="frame" x="345" y="316" width="363" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA CONTINUAR NO JOGO," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0S-mq-ZwD">
+                                <rect key="frame" x="20" y="316" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7k6-a7-Fs0">
-                                <rect key="frame" x="186" y="339" width="653" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7k6-a7-Fs0">
+                                <rect key="frame" x="20" y="339" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ACUMULE MAIS PONTOS A CADA NOVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vy8-k3-tL2">
-                                <rect key="frame" x="267" y="362" width="491" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERGUNTA RESPONDIDA CORRETAMENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zp-aG-iAe">
-                                <rect key="frame" x="261" y="385" width="503" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ACUMULE MAIS PONTOS A CADA NOVA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vy8-k3-tL2">
+                                <rect key="frame" x="20" y="362" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1319,13 +1329,26 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <segue destination="h6t-WZ-2NU" kind="push" id="TRz-op-ih8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERGUNTA RESPONDIDA CORRETAMENTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zp-aG-iAe">
+                                <rect key="frame" x="20" y="384" width="984" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0fA-18-RXh"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="kvz-lK-rRk" id="xFx-wu-C1O"/>
+                        <outlet property="btnMap" destination="tJm-Um-KFy" id="S8n-2Z-rDC"/>
                         <outlet property="imgBG" destination="1EP-kw-nxc" id="R7c-4i-ux4"/>
+                        <outlet property="lblPreMap1" destination="k0S-mq-ZwD" id="Uom-Qk-BbC"/>
+                        <outlet property="lblPreMap2" destination="7k6-a7-Fs0" id="Iqt-xe-m3m"/>
+                        <outlet property="lblPreMap3" destination="Vy8-k3-tL2" id="IKJ-29-n1P"/>
+                        <outlet property="lblPreMap4" destination="7Zp-aG-iAe" id="P2G-wx-7hW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4M-Is-int" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1430,9 +1453,9 @@ The parties claim to be free and unhindered to execute this term, with no charge
         <image name="mapa2" width="1754" height="1240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZLa-se-8z8"/>
-        <segue reference="tl3-C7-e0J"/>
+        <segue reference="9OS-Tx-xad"/>
         <segue reference="NwO-Iv-EId"/>
-        <segue reference="2Ub-7H-Qvd"/>
+        <segue reference="tl3-C7-e0J"/>
+        <segue reference="ZLa-se-8z8"/>
     </inferredMetricsTieBreakers>
 </document>

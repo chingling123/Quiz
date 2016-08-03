@@ -14,9 +14,46 @@ class ConfirmarAgendaController: UIViewController {
 
     @IBOutlet weak var viewGostaria: UIView!
     @IBOutlet weak var viewTemCerteza: UIView!
+    //viewCerteza
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var lblTemCerteza: UILabel!
+    @IBOutlet weak var btnYes: UIButton!
+    
+    //viewGostaria
+    @IBOutlet weak var lblQuerPedalar: UILabel!
+    @IBOutlet weak var lblAgendeSuaParticipação: UILabel!
+    @IBOutlet weak var btnNao: UIButton!
+    @IBOutlet weak var btnSim: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            
+            //ViewCerteza
+            lblTemCerteza.text = "Are your sure you don`t want to schedule your participation now?"
+            btnBack.setTitle("BACK", forState: UIControlState.Normal)
+            btnYes.setTitle("YES", forState: UIControlState.Normal)
+            
+            //ViewGostaria
+            btnNao.setTitle("NO", forState: UIControlState.Normal)
+            btnSim.setTitle("YES", forState: UIControlState.Normal)
+            lblQuerPedalar.text = "WOULD YOU LIKE TO SCHEDULE YOUR PARTICIPATION AND RIDE A BIKE ON THE STREETS OF MONACO OR RUN ON A RUNNING TRACK ALONGSIDE GREAT ATHLETES?"
+            lblAgendeSuaParticipação.text = "SCHEDULE HERE YOUR VIRTUAL EXPERIECNCE AT THE ADIDAS CREATORS BASE."
+            
+        }else{
+            //ViewCerteza
+            lblTemCerteza.text = "Tem certeza de que não quer agendar agora?"
+            btnBack.setTitle("VOLTAR", forState: UIControlState.Normal)
+            btnYes.setTitle("SIM", forState: UIControlState.Normal)
+            
+            //ViewGostaria
+            lblQuerPedalar.text = "QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?"
+            lblAgendeSuaParticipação.text = "AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE."
+            btnNao.setTitle("NÃO", forState: UIControlState.Normal)
+            btnSim.setTitle("SIM", forState: UIControlState.Normal)
+            
+        }
         
         viewGostaria.hidden = true
         viewTemCerteza.hidden = true

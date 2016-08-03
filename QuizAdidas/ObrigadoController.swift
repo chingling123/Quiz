@@ -10,8 +10,16 @@ import UIKit
 
 class ObrigadoController: UIViewController {
 
+    @IBOutlet weak var lblObrigado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            lblObrigado.text = "THANK YOU FOR YOUR PARTICIPATION!"
+        }else{
+            lblObrigado.text = "OBRIGADO PELA SUA PARTICIPAÇÃO!"
+        }
 
         // Do any additional setup after loading the view.
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
