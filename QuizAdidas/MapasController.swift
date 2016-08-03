@@ -31,8 +31,7 @@ class MapasController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.imgBG.addGestureRecognizer(gestureRecognizer)
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -48,10 +47,11 @@ class MapasController: UIViewController {
         resetTimer()
         imgMapa.hidden = true
     }
+    
     func resetTimer() {
         self.timer?.invalidate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
     }
     
     func decrementScore(){
@@ -61,15 +61,19 @@ class MapasController: UIViewController {
     }
     
     @IBAction func btnMapa1(sender: AnyObject) {
+        resetTimer()
         imgMapa.hidden = false
         imgMapa.image = UIImage(named: "mapa1")
         
     }
     @IBAction func voltarAction(sender: AnyObject) {
+        self.timer?.invalidate()
+        self.timer = nil;
         navigationController?.popViewControllerAnimated(true)
     }
 
     @IBAction func btnMapa2(sender: AnyObject) {
+        resetTimer()
         imgMapa.image = UIImage(named: "mapa2")
         imgMapa.hidden = false
     }

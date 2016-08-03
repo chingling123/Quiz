@@ -12,6 +12,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
 
     @IBOutlet weak var txtSMS: AKMaskField!
     @IBOutlet weak var imgBack: UIImageView!
+    @IBOutlet var lblAlert: UILabel!
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
@@ -20,6 +21,8 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.lblAlert.hidden = true
         
         txtSMS.mask = "({dd}) {ddddd}-{dddd}"
         //txtSMS.maskTemplate = "/(99/) 99999-9999"
@@ -30,7 +33,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
         self.txtSMS.addGestureRecognizer(gestureRecognizer)
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -44,7 +47,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     func resetTimer() {
         self.timer?.invalidate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
     }
     
     func decrementScore(){
@@ -67,10 +70,10 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
                 self.timer?.invalidate()
                 self.timer = nil;
                 if(success){
-                    let alert = UIAlertController(title: "Alerta", message: "SMS ENVIADO COM SUCESSO", preferredStyle: UIAlertControllerStyle.Alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-                    self.presentViewController(alert, animated: true, completion: nil)
-
+                    self.performSegueWithIdentifier("smsText", sender: nil)
+                }else{
+                    self.lblAlert.text = "Celular não encontrado."
+                    self.lblAlert.hidden = false
                 }
             })
         }

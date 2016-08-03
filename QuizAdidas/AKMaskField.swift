@@ -231,7 +231,7 @@ class AKMaskField: UITextField {
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 15
         self.layer.masksToBounds = true
-        self.layer.borderColor = UIColor (red: 1, green: 0, blue: 0, alpha: 1).CGColor
+        self.layer.borderColor = UIColor (red: 208/255.0, green: 18/255.0, blue: 46/255.0, alpha: 1).CGColor
         
     }
     

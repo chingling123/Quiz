@@ -83,7 +83,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
                 }else{
                     self.timer?.invalidate()
                     self.timer = nil;
-                    self.lblWarning.text = "CPF Invalido ou atingiu maximo de pontos"
+                    self.lblWarning.text = "CPF não cadastrado ou atingiu maximo de pontos"
                     self.lblWarning.hidden = false
                 }
             })

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2EC5E71D528344002B16C2 /* AlertaSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */; };
 		3C5ADA5A1D51044300855773 /* MoveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5ADA591D51044300855773 /* MoveKeyboard.swift */; };
 		E9041A0E1D48000F00E5CF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */; };
 		E9041A101D48000F00E5CF3A /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0F1D48000F00E5CF3A /* StartController.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSViewController.swift; sourceTree = "<group>"; };
 		3C5ADA591D51044300855773 /* MoveKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveKeyboard.swift; sourceTree = "<group>"; };
 		E9041A0A1D48000F00E5CF3A /* QuizAdidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizAdidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				E98C66CD1D4C204A003E3510 /* ConfirmarAgendaController.swift */,
 				E93285661D4C2469008F2611 /* QueroParticiparController.swift */,
 				E93285681D4C2488008F2611 /* MapasController.swift */,
+				3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				E98C66C21D4B9CF5003E3510 /* CurrentUser.swift in Sources */,
 				E98C66C81D4C1FC0003E3510 /* AgendaController.swift in Sources */,
 				E9EB04BD1D509A3400FDAAFB /* AKMaskFieldBlockChars.swift in Sources */,
+				3C2EC5E71D528344002B16C2 /* AlertaSMSViewController.swift in Sources */,
 				E9041A0E1D48000F00E5CF3A /* AppDelegate.swift in Sources */,
 				E9468C691D4AD6E100731B98 /* AgendumPost.swift in Sources */,
 				E93285691D4C2488008F2611 /* MapasController.swift in Sources */,
