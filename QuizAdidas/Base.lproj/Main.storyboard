@@ -37,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2PT" id="Iyq-KM-vPs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" id="Iyq-KM-vPs">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -77,7 +77,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3PT" id="7nH-Rh-baH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" id="7nH-Rh-baH">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -267,7 +267,7 @@
                                     <action selector="btnComecar:" destination="5E9-qC-6qn" eventType="touchUpInside" id="1pR-3f-8b4"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="N√öMERO DE TELEFONE:" textAlignment="natural" minimumFontSize="17" id="Ysd-sC-y0B" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="N√öMERO DO TELEFONE:" textAlignment="natural" minimumFontSize="17" id="Ysd-sC-y0B" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
                                 <rect key="frame" x="72" y="253" width="890" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -935,7 +935,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4Q-Bq-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1230" y="531"/>
+            <point key="canvasLocation" x="1147" y="717"/>
         </scene>
         <!--Confirmar Agenda Controller-->
         <scene sceneID="7HL-WY-X9e">
@@ -991,7 +991,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tem certeza que n√£o quer agendar agora?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z8p-EZ-knZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tem certeza de que n√£o quer agendar agora?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z8p-EZ-knZ">
                                         <rect key="frame" x="69" y="-2" width="204" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -1001,7 +1001,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                                 </subviews>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
+                            <view hidden="YES" contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
                                 <rect key="frame" x="235" y="282" width="569" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1216,8 +1216,8 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
     </scenes>
     <resources>
         <image name="bg10PT" width="2048" height="1536"/>
-        <image name="bg2PT" width="2048" height="1536"/>
-        <image name="bg3PT" width="2048" height="1536"/>
+        <image name="bg2" width="2048" height="1536"/>
+        <image name="bg3" width="2048" height="1536"/>
         <image name="bg4" width="2048" height="1536"/>
         <image name="bg5" width="2048" height="1536"/>
         <image name="bgtela1PT" width="2048" height="1536"/>
@@ -1241,9 +1241,9 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
         <image name="mapa2" width="1754" height="1240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fDL-3h-bTX"/>
-        <segue reference="M4X-VO-HRF"/>
-        <segue reference="2Ub-7H-Qvd"/>
+        <segue reference="9OS-Tx-xad"/>
         <segue reference="kZw-7N-kji"/>
+        <segue reference="M4X-VO-HRF"/>
+        <segue reference="ZLa-se-8z8"/>
     </inferredMetricsTieBreakers>
 </document>
