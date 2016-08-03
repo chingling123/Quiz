@@ -26,6 +26,7 @@
             <string>adineuePRO-Black</string>
             <string>adineuePRO-Black</string>
             <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -148,7 +149,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BQD-36-2WD" userLabel="NaoRecebiSMS">
-                                <rect key="frame" x="694" y="700" width="242" height="48"/>
+                                <rect key="frame" x="749" y="650" width="242" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_nao_recebi_smsPT"/>
                                 <connections>
@@ -263,7 +264,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CTR-y5-TWr">
-                                <rect key="frame" x="725" y="681" width="221" height="57"/>
+                                <rect key="frame" x="725" y="650" width="221" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_prosseguirPT"/>
                                 <connections>
@@ -271,7 +272,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kQc-hf-vru">
-                                <rect key="frame" x="725" y="681" width="221" height="57"/>
+                                <rect key="frame" x="725" y="650" width="221" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_comecarPT"/>
                                 <connections>
@@ -332,7 +333,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="Nzw-T4-hnD">
-                                <rect key="frame" x="124" y="192" width="782" height="470"/>
+                                <rect key="frame" x="124" y="192" width="782" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">REGULAMENTO
@@ -588,7 +589,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </textView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RnC-xc-4Lg">
-                                <rect key="frame" x="704" y="695" width="51" height="31"/>
+                                <rect key="frame" x="704" y="650" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="onTintColor" red="0.83137254901960789" green="0.16862745098039217" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -638,7 +639,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="A) OPCAO A">
-                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnOpcaoA:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="tzr-ra-bcM"/>
@@ -650,7 +651,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="B) OPCAO B">
-                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnOpcaoB:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="xTm-zC-Ugc"/>
@@ -662,7 +663,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="C) OPCAO C">
-                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnOpcaoC:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="CCS-Wy-icu"/>
@@ -677,7 +678,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="152" y="197" width="721" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="39"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dwl-Kl-SuU">
@@ -914,18 +915,19 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU CPF UTILIZADO NO CADASTRO DO TOTEM ANTERIOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hyx-eq-04L">
-                                <rect key="frame" x="101" y="319" width="833" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE O CPF INFORMADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hyx-eq-04L">
+                                <rect key="frame" x="101" y="302" width="833" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.4916666666666667" green="0.4916666666666667" blue="0.4916666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVISO LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhB-mv-SbY">
-                                <rect key="frame" x="101" y="404" width="833" height="45"/>
+                                <rect key="frame" x="332" y="493" width="360" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.74117647058823533" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="center" minimumFontSize="17" id="8Hk-vo-lxJ" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
@@ -939,7 +941,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </textField>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amU-OL-sUe" userLabel="Validar">
-                                <rect key="frame" x="408" y="473" width="208" height="46"/>
+                                <rect key="frame" x="408" y="425" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_validar-1PT"/>
                                 <connections>
@@ -947,7 +949,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bDq-yL-9KJ" userLabel="Validar">
-                                <rect key="frame" x="694" y="700" width="208" height="46"/>
+                                <rect key="frame" x="50" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_voltarPT"/>
                                 <connections>
@@ -972,6 +974,34 @@ The parties claim to be free and unhindered to execute this term, with no charge
             </objects>
             <point key="canvasLocation" x="1214" y="2924"/>
         </scene>
+        <!--AlertaSMS View Controller-->
+        <scene sceneID="SV1-CU-6jb">
+            <objects>
+                <viewController id="UKy-is-yC3" customClass="AlertaSMSViewController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wyy-s6-s7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="rLF-gH-kzK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23D-q6-4w2">
+                                <rect key="frame" x="318" y="511" width="386" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="okAction:" destination="UKy-is-yC3" eventType="touchUpInside" id="GST-2S-OzB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yTM-ld-qlC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEE-yg-pU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="3858"/>
+        </scene>
         <!--NoSMS Controller-->
         <scene sceneID="NLz-L4-rkt">
             <objects>
@@ -985,7 +1015,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
-                                <rect key="frame" x="694" y="700" width="208" height="46"/>
+                                <rect key="frame" x="694" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_voltarPT"/>
                                 <connections>
@@ -1014,6 +1044,14 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVISO LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HuK-ay-FeI">
+                                <rect key="frame" x="332" y="527" width="360" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.74117647060000003" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1021,7 +1059,9 @@ The parties claim to be free and unhindered to execute this term, with no charge
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imgBack" destination="OtG-nk-73I" id="92c-kL-m5r"/>
+                        <outlet property="lblAlert" destination="HuK-ay-FeI" id="uO2-7f-DCa"/>
                         <outlet property="txtSMS" destination="eZW-vL-hYV" id="grw-pG-KmE"/>
+                        <segue destination="UKy-is-yC3" kind="push" identifier="smsText" id="dyI-L0-AEM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiD-7Y-QGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1363,6 +1403,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
         </scene>
     </scenes>
     <resources>
+        <image name="Telas Quiz altarado9" width="2133" height="1600"/>
         <image name="bg10PT" width="2048" height="1536"/>
         <image name="bg1EN" width="2048" height="1536"/>
         <image name="bg2" width="2048" height="1536"/>
