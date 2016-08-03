@@ -1,25 +1,1249 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="oy5-9F-5uQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="adineuePRO-Black.otf">
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+            <string>adineuePRO-Black</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Language Controller-->
+        <scene sceneID="xXu-Zr-efO">
+            <objects>
+                <viewController id="Jz4-zo-vEd" customClass="LanguageController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCS-Iv-h65">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2PT" id="Iyq-KM-vPs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a5D-4h-tXc" userLabel="btnIdle">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="Jz4-zo-vEd" eventType="touchUpInside" id="9uY-Lg-JoO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7km-qa-BJD" userLabel="Comecar">
+                                <rect key="frame" x="603" y="392" width="191" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_comecarPT"/>
+                                <connections>
+                                    <action selector="btnSouBR:" destination="Jz4-zo-vEd" eventType="touchUpInside" id="cKT-AY-nS7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zOL-XL-tPO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="TuD-p4-UeQ" kind="push" identifier="SegExplanation" id="ZSH-2G-Aqe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Fu-5u-knA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="1505"/>
+        </scene>
+        <!--Presentation Controller-->
+        <scene sceneID="XBQ-77-wdM">
+            <objects>
+                <viewController id="TuD-p4-UeQ" customClass="PresentationController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t2F-GX-utb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3PT" id="7nH-Rh-baH">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtg-mm-CGs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="TuD-p4-UeQ" eventType="touchUpInside" id="iJK-2F-d6q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7I1-qd-RWG" userLabel="Prosseguir">
+                                <rect key="frame" x="741" y="690" width="198" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_prosseguirPT"/>
+                                <connections>
+                                    <segue destination="mHy-c6-C8z" kind="push" id="9OS-Tx-xad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zII-Mt-MrC"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSW-Lk-xrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2365" y="2445"/>
+        </scene>
+        <!--Register Choose Controller-->
+        <scene sceneID="HyQ-Ya-3hc">
+            <objects>
+                <viewController id="mHy-c6-C8z" customClass="RegisterChooseController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6I7-j4-ENS">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="sOG-bx-E2C">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gDy-VM-WoR" userLabel="btnIdle">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="mHy-c6-C8z" eventType="touchUpInside" id="rvD-pC-nlR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hxT-rQ-Uu9" userLabel="NaoTenhoCadastro">
+                                <rect key="frame" x="172" y="301" width="681" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_nao_tenho_cadastroPT"/>
+                                <connections>
+                                    <segue destination="KUa-UE-5yo" kind="push" id="2Ch-C8-DwS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eA1-IS-A7B" userLabel="JaTenhoCadastro">
+                                <rect key="frame" x="172" y="508" width="681" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_tenho_cadastroPT"/>
+                                <connections>
+                                    <segue destination="EBq-gj-gm0" kind="push" id="YAz-M0-RGc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BQD-36-2WD" userLabel="NaoRecebiSMS">
+                                <rect key="frame" x="694" y="700" width="242" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_nao_recebi_smsPT"/>
+                                <connections>
+                                    <segue destination="3sf-jK-N27" kind="push" id="chW-ru-tO2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hDf-nz-Ww0"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYw-NP-E3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2370" y="3336"/>
+        </scene>
+        <!--Date Piker Controller-->
+        <scene sceneID="fPr-ZX-ufT">
+            <objects>
+                <viewController id="rsL-qf-Mcz" customClass="DatePikerController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hxc-2v-Dj8">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="F4z-sb-TDy">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="491425406.474733">
+                                    <!--2016-07-28 19:03:26 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="473252400">
+                                    <!--2015-12-31 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5B-rU-bkR">
+                                <rect key="frame" x="442" y="244" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK"/>
+                                <connections>
+                                    <action selector="btnOk:" destination="rsL-qf-Mcz" eventType="touchUpInside" id="zWv-Js-gAk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="300"/>
+                    <connections>
+                        <outlet property="dtpDataNasc" destination="F4z-sb-TDy" id="drJ-Hw-icn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WD-oN-PqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3391" y="3548"/>
+        </scene>
+        <!--Official Register Controller-->
+        <scene sceneID="yOD-vo-cyY">
+            <objects>
+                <viewController id="5E9-qC-6qn" customClass="OfficialRegisterController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jdg-qb-Gw7">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="ZiK-rH-WKD">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CZR-KO-6Ee" userLabel="btnIdle">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnIdle:" destination="5E9-qC-6qn" eventType="touchUpInside" id="3rb-QD-WTP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NOME:" textAlignment="natural" minimumFontSize="17" id="t7P-rZ-V1b" customClass="TextFieldModel" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="72" y="253" width="890" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5E9-qC-6qn" id="l34-5P-4Vs"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF:" textAlignment="natural" minimumFontSize="17" id="6pI-Ha-ddM" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="72" y="414" width="890" height="52"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5E9-qC-6qn" id="ZcX-sL-fvd"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-MAIL:" textAlignment="natural" minimumFontSize="17" id="aCE-Jm-qTR" customClass="TextFieldModel" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="72" y="332" width="890" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5E9-qC-6qn" id="hef-bY-b1O"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CTR-y5-TWr">
+                                <rect key="frame" x="725" y="681" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_prosseguirPT"/>
+                                <connections>
+                                    <action selector="btnProsseguir:" destination="5E9-qC-6qn" eventType="touchUpInside" id="joA-A6-8Gd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kQc-hf-vru">
+                                <rect key="frame" x="725" y="681" width="221" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_comecarPT"/>
+                                <connections>
+                                    <action selector="btnComecar:" destination="5E9-qC-6qn" eventType="touchUpInside" id="1pR-3f-8b4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NÚMERO DE TELEFONE:" textAlignment="natural" minimumFontSize="17" id="Ysd-sC-y0B" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="72" y="253" width="890" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5E9-qC-6qn" id="wvK-mO-tlz"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YOp-jW-6im">
+                                <rect key="frame" x="72" y="332" width="890" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnDataNasc:" destination="5E9-qC-6qn" eventType="touchUpInside" id="haT-p7-xPf"/>
+                                    <segue destination="rsL-qf-Mcz" kind="popover" identifier="popoverDate" popoverAnchorView="YOp-jW-6im" id="SxR-eo-S7e">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WFM-Lx-FRn"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnComecar" destination="kQc-hf-vru" id="0Ao-ZF-JUO"/>
+                        <outlet property="btnDataNasc" destination="YOp-jW-6im" id="fjh-xe-NnS"/>
+                        <outlet property="btnProsseguir" destination="CTR-y5-TWr" id="wNb-FH-LVd"/>
+                        <outlet property="txtCPF" destination="6pI-Ha-ddM" id="54q-5w-sxh"/>
+                        <outlet property="txtCelular" destination="Ysd-sC-y0B" id="OZ8-H2-YOc"/>
+                        <outlet property="txtEmail" destination="aCE-Jm-qTR" id="ruc-E5-M5i"/>
+                        <outlet property="txtName" destination="t7P-rZ-V1b" id="NjF-6C-dLX"/>
+                        <segue destination="pfq-Wm-lBH" kind="push" identifier="toQuestion" id="kZw-7N-kji"/>
+                        <segue destination="mHy-c6-C8z" kind="push" identifier="cpfUsado" id="2Ub-7H-Qvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZW9-1z-3ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3457" y="4266"/>
+        </scene>
+        <!--Term Controller-->
+        <scene sceneID="DuV-Qa-ajx">
+            <objects>
+                <viewController id="KUa-UE-5yo" customClass="TermController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hrs-Fx-XBj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg10PT" id="REz-Pv-16B">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyc-e3-gf8" userLabel="btnTermAceite">
+                                <rect key="frame" x="778" y="688" width="166" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_aceitoPT"/>
+                                <connections>
+                                    <action selector="btnTermAcept:" destination="KUa-UE-5yo" eventType="touchUpInside" id="6jH-7j-Ado"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="Nzw-T4-hnD">
+                                <rect key="frame" x="124" y="192" width="782" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">REGULAMENTO
+“CONCURSO BOLA PRA JOGO”
+
+1. EMPRESA PROMOTORA (Mandatária). HAVAS SPORTS &amp; ENTRETENIMENTO BRASIL LTDA., doravante denominada “PROMOTORA”, inscrita no CNPJ/MF sob o nº 12.891.442/0001-54, com sede na Avenida Magalhães de Castro, 4800, 22° andar, Continental Tower, CEP 05502-001, Município de São Paulo, Estado de São Paulo, Brasil.
+1.2. Empresas Aderentes. 
+1.2.1. ADIDAS DO BRASIL LTDA., inscrita no CNPJ/MF sob o nº 42.274.696/0001-94, com sede na Alameda Rio Negro, 585, 9° andar, Alphaville, CEP 06454-000, Município de Barueri, Estado de São Paulo, Brasil.
+1.2.2. FLA 151 FUTEBOL ARTIGO DE VESTUÁRIO E ACESSÓRIOS ESPORTIVOS LTDA. (razão social), nome fantasia: Nação Rubro Negra, inscrita no CNPJ/MF sob o nº 23.438.800/0001-94, com sede na Avenida N-S PAA 10292/PAL 38883, 135, Loja 1074, Jacarepaguá, CEP 22.775-027, Município do Rio de Janeiro, Estado do Rio de Janeiro, Brasil
+1.2.3. SBF Comércio de Artigos Esportivos Ltda. (razão social), nome fantasia: Loja Centauro inscrita no CNPJ/MF sob o nº 06.347.409/0001-65, com sede na Rua Hugo D’antola, Lapa, CEP 05038-090, Município de São Paulo, Estado de São Paulo, Brasil. 
+1.2.4. CINEMARK BRASIL S/A, sob o nº 00.779.721/0001-41, com sede na Avenida Dr. Chucri Zaidan, 920, Torre I, 15° andar, CEP 04583-904, Município de São Paulo, Estado de São Paulo, Brasil.
+
+2. Modalidade da Distribuição Gratuita de Prêmios. A presente distribuição gratuita de prêmios realizar-se-á na modalidade Concurso.
+
+3. Produtos (objetos da promoção comercial). A participação poderá estar vinculada à compra de produtos e/ou serviços da Mandatária e/ou Aderentes.
+
+4. Área de Execução. O Concurso será válido, para participação única e exclusiva, de pessoas físicas - maiores de quatorze (14) anos de idade que tenham acesso ao espaço “Creators Base” montado no Município do Rio de Janeiro, Estado do Rio de Janeiro, Brasil, nos termos desse Regulamento.
+
+5. Prazo de Execução. O Concurso iniciar-se-á no dia 3 de agosto de 2016 e encerrar-se-á no dia 22 de agosto de 2016 (data da divulgação do resultado final), conforme cronograma abaixo:
+5.1. Período de participação: De 03/08/2016 a 22/08/2016, no espaço “Creators Base” montado no Shopping Metropolitano, localizado no Município do Rio de Janeiro que funcionará de segunda ao sábado, das 10h às 22h, domingo, das 11h às 22h, e feriados das 13h às 22h.
+
+
+
+6. Mecânica do Concurso.
+	6.1. O “Creators Base” será um espaço montado no Shopping Metropolitano sito à Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ, onde serão oferecidas atividades esportivas: Futebol (chutes ao gol) e Basquete (cestas de basquete) e experiências com realidade virtual; aberto para a participação de pessoas físicas - maiores de quatorze (14) anos de idade que tenham acesso ao espaço “Creators Base”, nos termos desse Regulamento.
+6.1.1. Cumprida uma das condições de participação descritas nos itens subsequentes, o acesso ao espaço de atividades ocorrerá, a partir de um cadastro que deverá ser realizado no “Creators Base” junto à promotora que estará na entrada do espaço de atividades ou, em um dos seis totens instalados nas dependências do referido shopping.
+
+No momento do cadastro, o interessado em participar deverá informar os seguintes dados pessoais: 
+Participantes de nacionalidade brasileira ou naturalizados: Nome completo, CPF, número do celular, e-mail e data de nascimento.
+Participantes estrangeiros: Nome completo, número do passaporte, número do celular, e-mail e data de nascimento. 
+
+6.2. Condições e Formas de Participação. Durante o período informado no item 5.1 e de acordo com os itens anteriores, os interessados em conhecer e/ou participar das atividades poderão escolher uma ou mais formas possíveis de acesso ao espaço, a saber:
+
+6.2.1. Livre acesso ao espaço: O interessado em participar das atividades de basquete e futebol poderá fazê-lo mediante cadastro. Este oferecerá um benefício comum a todos os participantes que é de 1 minuto na primeira atividade e 3 chutes ao gol na segunda atividade. 
+
+6.2.2. Participação em um Quiz de perguntas aleatórias relacionadas ao tema esporte que estarão disponíveis em um dos seis totens (terminais eletrônicos) localizados dentro do shopping. Dependendo do resultado da participação no quiz, o participante poderá obter bônus, tais como: tempos e chutes extras nas atividades de basquete e futebol, respectivamente, mediante participação e pontuação.
+Cada fase do quiz será composta por 6 perguntas (que valem 1 ponto cada);  o usuário deverá responder cada uma delas em até 15 segundos; caso o tempo se esgote, a inércia do participante resultará como resposta incorreta. O beneficio será cedido ao usuário à medida que ele somar 6 acertos de respostas (em um único totem ou acessando os outros 5 totens distribuídos no shopping).
+Ele terá 6 tentativas considerando que teremos 6 totens no shopping. 
+A soma total de pontos que ele poderá alcançar tem o limite de 36 pontos (soma de acertos de todas as perguntas nos 6 totens).
+6 pontos valem 20 segundos extras na atividade de basquete OU 1 chute a gol na atividade do futebol. O usuário deverá escolher em que atividade deverá usar seus pontos.
+No final, acertando as 36 perguntas, ele poderá acumular 2 minutos extras no basquete ou 6 chutes a gol;
+O beneficio valerá apenas quando o usuário alcançar 6, 12, 18, 24, 30, 36 pontos. Se o usuário tiver pontuado números que estão entre estes será considerado o menor número mais próximo a ele. 
+Exemplo: pontuou 14, tem direito a dois benefícios, 25, tem direito a 4 benefícios, assim por diante.
+Após o quiz, o participante receberá um SMS com um código para ele apresentar na entrada do espaço e assim comprovar benefícios recebidos com as respostas do quiz.
+
+6.2.2. Compra nas lojas Adidas do Shopping Metropolitano e da Gávea: Durante o período de participação, a cada R$ 50,00, o cliente ganhará um bônus que consistirá em 1 minuto extra no basquete ou 3 chutes na atividade do futebol. Para ter acesso ao espaço, o cliente deverá apresentar o seu cupom fiscal de compra e o voucher do bônus  que lhe entregue por um vendedor nas referidas lojas.
+
+6.2.3. Compra na loja Nação Rubro Negro: Durante o período de participação, a cada R$ 50,00, o cliente ganhará 1 fast pass (prioridade na fila da atividade) para utilizar ou na atividade de basquete ou na atividade de futebol. Para ter acesso ao local, o cliente deverá apresentar o seu voucher de fast pass e seu cupom fiscal.
+
+6.2.4. Compra nas lojas Centauro: Durante o período de participação, a cada R$ 50,00, o cliente ganhará 1 fast pass (prioridade na fila da atividade) para utilizar ou na atividade de basquete ou na atividade de futebol. Para ter acesso ao local, o cliente deverá apresentar o seu   voucher de fast passe seu cupom fiscal.
+
+6.2.5. Clientes Cinemark: Durante o período de participação, na compra de um ingresso, o cliente ganhará 1 fast pass (prioridade na fila da atividade) para utilizar ou na atividade de basquete ou na atividade de futebol. Para ter acesso ao espaço, o cliente deverá apresentar o seu ingresso.
+
+6.2.6. Cumpridas uma das condições de participação, o participante poderá participar das atividades de basquete e futebol, durante o período de execução do Concurso, serão premiados os melhores participantes de cada dia.
+	
+6.3. Da Desclassificação.
+6.3.1. Serão sumariamente desclassificados/eliminados, os participantes que não observarem às condições desse Regulamento ou cometerem qualquer tipo de fraude devidamente comprovadas ou que praticarem condutas que possam alterar o regular resultado do Concurso.
+6.3.2. Os participantes desclassificados/eliminados não serão comunicados da decisão, não remanescendo qualquer responsabilidade à PROMOTORA.
+6.4.  Para efeitos deste Concurso, serão consideradas como válidas as participações que atenderem todas as condições e prazos deste Regulamento.
+	
+7. Apuração dos resultados.
+7.1. O presente Concurso assegurará a igualdade de condições entre os participantes, de acordo com o cadastramento e participações diárias, a PROMOTORA avaliará o desempenho individual dos participantes nas atividades de basquete e futebol, considerando os seguintes critérios de avaliação:
+7.1.1. Basquete: 
+Acerto de bola na cesta na tabela e;
+Quantidade de cestas realizadas no tempo que lhe é beneficiado (mínimo de 1 minuto). 
+7.1.2. Futebol:
+ Acerto de chute ao gol (mínimo de 3 chutes) e;
+Velocidade do chute.
+
+7.2. Forma de Apuração. Ao final de cada dia de execução, a PROMOTORA apurará o vencedor do dia, de cada uma das atividades: basquete e futebol, ou seja, a premiação será dada diariamente, do dia 3 ao dia 22 de agosto; e serão premiados os participantes que tiverem o chute mais rápido no futebol (verificação através de um equipamento que medirá a velocidade do chute denominada Speed Gun*) e para quem fizer mais cestas na atividade de basquete no tempo de 1 minuto.  
+*Informações técnicas do equipamento para medir velocidade do chute: Speed Gun. É usado na aplicação da lei para medir a velocidade dos veículos em movimento e é frequentemente utilizado no desporto profissional, fazendo medição de velocidade em modalidades esportivas.
+
+7.2.1. Em caso de empate entre concorrentes, será utilizado o critério da ordem de cadastro; será considerado vencedor, o participante que se cadastrou primeiro.
+7.2.3. No final, serão premiados 40 participantes, sendo 20 vencedores (em cada atividade/modalidade) que terão direito aos prêmios descritos no item 8. 
+7.3. A lista de vencedores será atualizada diariamente durante o período de execução e será divulgada no espaço do Creators Base, localizado dentro do Shopping Metropolitano sito à Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ e na loja Adidas do Shopping Metropolitano.
+
+8. PRÊMIOS (Descrição e Quantidade).
+8.1. Descrição e Quantidade:
+Prêmio Atividade Futebol: Uma bola de futebol Adidas Errejota Top Replique (100% Poliuretano, Peso Aproximado: Tamanho 05: Cerca de 440g), no valor de R$ 119,99. Quantidade total: Vinte (20). 
+Prêmio Atividade Basquete: Uma bola de basquete Adidas ALL COURT – BASKETBALL (100% Poliuretano, outros, 90g, 100% Butileno), no valor de R$ 179,99. Quantidade total: Vinte (20).
+No total, serão 40 prêmios distribuídos durante todo o período de ação (1 bola de basquete e 1 bola de futebol por dia).
+QUANTIDADE TOTAL DE PRÊMIOS: Quarenta (40).
+VALOR TOTAL DOS PRÊMIOS: R$ 5.999,60. 
+8.2. Os prêmios serão exibidos no espaço do Creators Base localizado dentro do Shopping Metropolitano sito à Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ.
+
+9. Entrega dos prêmios.
+9.1. Durante o período de 03/08 a 22/08/2018, o prêmio será entregue, de forma gratuita e sem ônus, na loja adidas - 1º piso localizado dentro do Shopping Metropolitano sito à Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ. Findo o período de execução e no prazo de até 30 dias, contados da divulgação dos resultados, o ganhador deverá retirar o seu prêmio na loja Adidas localizada no Shopping Metropolitano. 
+9.2. O ganhador do prêmio será avisado que foi contemplado em até 48 horas após ter sido apurado como tal.
+9.3. Para o recebimento do prêmio o ganhador deverá preencher e assinar com o responsável legal (se for menor de idade), o recibo de entrega do prêmio, dando quitação e encerrando a responsabilidade da PROMOTORA neste Concurso.
+9.4.	O prêmio é individual e intransferível, bem como não poderá ser convertido, total ou parcialmente, em dinheiro. 
+9.5. Todas as despesas necessárias à entrega do prêmio, inclusive pagamento de taxas, impostos, contribuições previdenciárias e/ou emolumentos serão custeados pela PROMOTORA. 
+9.6. Na eventualidade do contemplado vir a falecer, o prêmio será entregue ao seu inventariante, que deverá comprovar tal condição. 
+
+10. Prescrição do direito aos prêmios. Caso o prêmio ganho no Concurso, não seja reclamado no prazo de 180 (cento e oitenta) dias, contados da respectiva data de apuração, caducará o direito de o respectivo titular e o valor correspondente será recolhido, pela Promotora, ao Tesouro Nacional, no prazo de 10 (dez) dias da data da extinção do direito.
+
+11. Canais e formas de divulgação institucional pela mídia. A divulgação do Concurso realizar-se-á através de materiais de divulgação disponíveis nos locais definidos pela PROMOTORA. O número do Certificado de Autorização CAIXA será divulgado de forma expressa em todos os meios e materiais de divulgação do Concurso.
+11.1. O Regulamento estará disponível para consulta nos totens e no espaço do Creators Base localizado dentro do Shopping Metropolitano sito à Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ.
+
+12. Comissão de julgamento. As dúvidas e controvérsias dos participantes da promoção serão, primeiramente, dirimidas por seus respectivos organizadores, persistindo-as serão submetidas à CEPCO/CAIXA, e no silêncio injustificado, os participantes poderão a qualquer momento, durante o período da promoção, fazer reclamação, desde que fundamentada, aos órgãos de defesa dos direitos do consumidor de sua cidade ou Estado.
+
+13. Cessão do direito de direito de imagem/nome/voz e autorização para recebimento de e-mail e SMS. Os participantes desse Concurso, desde já, autorizam e cedem à PROMOTORA, de forma gratuita, o uso de suas imagens, nomes e som de voz (se for o caso) para uso da PROMOTORA em qualquer tipo de mídia e peças promocionais para divulgação do resultado do Concurso no Brasil e no exterior, pelo prazo de 01 (um) ano contato a partir do encerramento do Concurso. 
+13.1. Os participantes do Concurso expressamente declaram estar cientes e concordar que as fotos poderão permanecer no histórico de páginas de internet e redes sociais, mesmo após o prazo estipulado, sem que isso configure infração a direitos autorais, conexos e/ou direitos de personalidade.
+13.2. As imagens poderão ser editadas, modificadas, alteradas pela PROMOTORA, da forma que melhor lhe convier, e aproveitar, sem a necessidade de comunicação ou anuência dos titulares.
+              13.3. Os participantes desse Concurso, desde já, autorizam à PROMOTORA e empresas envolvidas na promoção o envio de SMS e e-mail cadastrados na promoção. 
+
+14. Reconhecimento de cláusulas e aceitação das regras do Regulamento. A simples participação nesta promoção implicará no total e integral reconhecimento das condições e aceitação irrestrita deste Regulamento.
+DISTRIBUIÇÃO GRATUITA – CERTIFICADO DE AUTORIZAÇÃO CAIXA N° 3-0000/2016.
+
+
+Termo de Autorização de Uso de Imagem
+
+
+Eu autorizo a adidas group (“LICENCIADA”), sociedade limitada, com sede à Alameda Rio Negro n. 585, Edifício Demini, Centro Administrativo Rio Negro, 8 andar, conjuntos 81 e 82, 9 andar, conjuntos 91 e 92 e 10 andar – parte, Alphaville Centro Industrial e Empresarial, Barueri/SP, inscrita no CNPJ sob o nº 42.274.696/0001-94, expressamente a utilização de minha imagem e voz, em caráter definitivo e gratuito, constante em fotos e filmagens decorrentes de minha participação na experiência de realidade virtual promovida pela LICENCIADA aos público em geral na  Creators House localizado no Shopping Metropolitano sob qualquer meio e em qualquer plataforma existente ou que venha a ser inventada. 
+
+As Partes declaram estar livres e desimpedidas para celebrar o presente temo, não existindo em vigor qualquer ônus, gravame ou obrigação que as impeça de fazê-lo. Obrigam-se as Partes a cumprir o disposto neste instrumento por si, seus herdeiros e sucessores legais.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KUa-UE-5yo" id="MVT-02-jmK"/>
+                                </connections>
+                            </textView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RnC-xc-4Lg">
+                                <rect key="frame" x="704" y="695" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.83137254901960789" green="0.16862745098039217" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="swtTermAcept:" destination="KUa-UE-5yo" eventType="valueChanged" id="LZ1-5g-r9Q"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ep4-Cv-WXn"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnTermAcpet" destination="jyc-e3-gf8" id="bS1-vd-LfG"/>
+                        <outlet property="swtTermAcept" destination="RnC-xc-4Lg" id="xgU-bA-hNr"/>
+                        <outlet property="textRules" destination="Nzw-T4-hnD" id="d7w-x2-aAt"/>
+                        <segue destination="5E9-qC-6qn" kind="push" identifier="toCreateRegister" id="CaD-Bn-W0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Puc-vx-BVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2378" y="4266"/>
+        </scene>
+        <!--Questions Controller-->
+        <scene sceneID="Qbp-UH-MCW">
+            <objects>
+                <viewController id="pfq-Wm-lBH" customClass="QuestionsController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jK5-Ln-tPA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="aZ9-nx-eM8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y2o-x3-KHz" userLabel="btnIdle">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="ALt-AF-n48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iZY-CY-3fc">
+                                <rect key="frame" x="170" y="470" width="554" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="A) OPCAO A">
+                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOpcaoA:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="tzr-ra-bcM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L6E-A5-sHs">
+                                <rect key="frame" x="170" y="535" width="554" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="B) OPCAO B">
+                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOpcaoB:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="xTm-zC-Ugc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cSm-9d-L5J">
+                                <rect key="frame" x="170" y="600" width="554" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="23"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="C) OPCAO C">
+                                    <color key="titleColor" red="0.68235294117647061" green="0.11372549019607843" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnOpcaoC:" destination="pfq-Wm-lBH" eventType="touchUpInside" id="CCS-Wy-icu"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iBC-ML-QC4">
+                                <rect key="frame" x="749" y="679" width="187" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_prosseguirPT"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. QUANDO A SELEÇÃO BRASILEIRA DE VOLEI GANHOU A PRIMEIRA MEDALHA DE OURO?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UD0-fE-cse">
+                                <rect key="frame" x="152" y="197" width="721" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="39"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dwl-Kl-SuU">
+                                <rect key="frame" x="957" y="211" width="56" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="26"/>
+                                <color key="textColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GLk-pz-7vL"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnOpcaoA" destination="iZY-CY-3fc" id="eBq-nC-5mM"/>
+                        <outlet property="btnOpcaoB" destination="L6E-A5-sHs" id="8tI-Qe-gkN"/>
+                        <outlet property="btnOpcaoC" destination="cSm-9d-L5J" id="x3a-Ii-ysB"/>
+                        <outlet property="btnProsseguir" destination="iBC-ML-QC4" id="6Dd-VL-RKn"/>
+                        <outlet property="lblCounter" destination="Dwl-Kl-SuU" id="lwy-c2-CkS"/>
+                        <outlet property="lblPergunta" destination="UD0-fE-cse" id="UaI-Oc-lIa"/>
+                        <segue destination="alT-nH-MZH" kind="push" identifier="goToResult" id="pNF-0q-kWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQt-0F-HQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="5232"/>
+        </scene>
+        <!--Pontuacao Controller-->
+        <scene sceneID="ZwM-bF-b5o">
+            <objects>
+                <viewController id="alT-nH-MZH" customClass="PontuacaoController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IV6-vH-qyO">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="0oa-Pj-OQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zFG-gQ-e0G" userLabel="btnProsseguir">
+                                <rect key="frame" x="399" y="626" width="213" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_prosseguirPT"/>
+                                <connections>
+                                    <segue destination="G4n-Au-59t" kind="push" id="SqI-E8-Ucc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Npz-JC-t5a">
+                                <rect key="frame" x="469" y="340" width="73" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G8x-dJ-mre">
+                                <rect key="frame" x="428" y="265" width="154" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="52"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARABÉNS VOCÊ FEZ A PONTUAÇÃO MÁXIMA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sep-hJ-JIl">
+                                <rect key="frame" x="129" y="241" width="766" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEM ALCANCE DE PONTUAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g5i-C1-hem">
+                                <rect key="frame" x="216" y="364" width="593" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Aih-PJ-4iS" userLabel="btnQueroParticipar">
+                                <rect key="frame" x="399" y="491" width="213" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_quero_continuarPT"/>
+                                <connections>
+                                    <segue destination="iBh-mf-okY" kind="push" id="kPS-cy-axn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YCE-1r-DXz" userLabel="btnEncerrarMinhaParicipação">
+                                <rect key="frame" x="399" y="574" width="213" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_encerrar_participacaoPT"/>
+                                <connections>
+                                    <segue destination="G4n-Au-59t" kind="push" id="tl3-C7-e0J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOCÊ PODE CONTINUAR NO JOGO E GANHAR MAIS BÔNUS. DIRIJA-SE AO PRÓXIMO TOTEM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xkj-ie-qIP">
+                                <rect key="frame" x="266" y="379" width="492" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_cod_sms" id="DNJ-5Q-H6M">
+                                <rect key="frame" x="327" y="454" width="371" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZM5-LC-Mtw"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnEncerrar" destination="YCE-1r-DXz" id="A8H-oo-DjQ"/>
+                        <outlet property="btnProsseguir" destination="zFG-gQ-e0G" id="p0R-l1-jCY"/>
+                        <outlet property="btnQuero" destination="Aih-PJ-4iS" id="077-KJ-HYE"/>
+                        <outlet property="imgRecebera" destination="DNJ-5Q-H6M" id="hgW-i9-Pf3"/>
+                        <outlet property="lblDicas" destination="Xkj-ie-qIP" id="lvK-d3-2aX"/>
+                        <outlet property="lblPontos" destination="G8x-dJ-mre" id="zlI-rC-Abj"/>
+                        <outlet property="lblResultado" destination="g5i-C1-hem" id="R0X-Cd-nO8"/>
+                        <outlet property="lblTextPontos" destination="sep-hJ-JIl" id="Whe-z7-Sk5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRG-Mx-JuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3467" y="5195"/>
+        </scene>
+        <!--Agenda Controller-->
+        <scene sceneID="yh0-RN-F9y">
+            <objects>
+                <viewController id="a5e-NO-3Jw" customClass="AgendaController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HxM-vd-Ps5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="fp1-4T-K9I">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" id="2ff-6o-hdN">
+                                <rect key="frame" x="0.0" y="333" width="1024" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="a5e-NO-3Jw" id="JDb-vB-USy"/>
+                                    <outlet property="delegate" destination="a5e-NO-3Jw" id="r7j-ft-Eos"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6lm-B9-E2l">
+                                <rect key="frame" x="130" y="208" width="831" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="26"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZeD-Vc-Hwe" userLabel="btnConfirmar">
+                                <rect key="frame" x="711" y="685" width="213" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_confirmarPT"/>
+                                <connections>
+                                    <action selector="btnConfirmar:" destination="a5e-NO-3Jw" eventType="touchUpInside" id="MEL-h4-J46"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nkg-Hx-GFc" userLabel="btnVoltar">
+                                <rect key="frame" x="74" y="685" width="204" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_cancelarPT"/>
+                                <connections>
+                                    <segue destination="G4n-Au-59t" kind="push" id="M4X-VO-HRF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HORÁRIOS DISPONÍVEIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bsH-ay-VZY">
+                                <rect key="frame" x="294" y="292" width="503" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="41"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gct-ur-DoL"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="dtpAgenda" destination="2ff-6o-hdN" id="cKs-ei-D0Q"/>
+                        <outlet property="imgBG" destination="fp1-4T-K9I" id="FLh-d0-66k"/>
+                        <segue destination="mhV-pJ-7cr" kind="push" identifier="fromAgenda" id="fDL-3h-bTX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="njQ-yo-Qma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="6538"/>
+        </scene>
+        <!--Obrigado Controller-->
+        <scene sceneID="kb8-zc-fpF">
+            <objects>
+                <viewController id="mhV-pJ-7cr" customClass="ObrigadoController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHa-2n-z8z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="QoA-iK-qzN">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6p9-1s-MKp" userLabel="btnFechar">
+                                <rect key="frame" x="489" y="700" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBRIGADO PELA SUA PARTICIPAÇÃO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9bV-2O-PX0">
+                                <rect key="frame" x="92" y="406" width="840" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Elj-3t-sfu"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBG" destination="QoA-iK-qzN" id="3XW-E6-I1H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxQ-c7-WjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4130" y="7670"/>
+        </scene>
+        <!--Ja Cadastrado Controller-->
+        <scene sceneID="0Rs-mb-J14">
+            <objects>
+                <viewController id="EBq-gj-gm0" customClass="JaCadastradoController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ckz-wr-akT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="VpR-nf-nA6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU CPF UTILIZADO NO CADASTRO DO TOTEM ANTERIOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hyx-eq-04L">
+                                <rect key="frame" x="101" y="319" width="833" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.4916666666666667" green="0.4916666666666667" blue="0.4916666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVISO LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhB-mv-SbY">
+                                <rect key="frame" x="101" y="404" width="833" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="center" minimumFontSize="17" id="8Hk-vo-lxJ" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="101" y="348" width="833" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="EBq-gj-gm0" id="TGP-WD-5na"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amU-OL-sUe" userLabel="Validar">
+                                <rect key="frame" x="408" y="473" width="208" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_validar-1PT"/>
+                                <connections>
+                                    <action selector="btnValidar:" destination="EBq-gj-gm0" eventType="touchUpInside" id="Gqf-Rk-Fua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bDq-yL-9KJ" userLabel="Validar">
+                                <rect key="frame" x="694" y="700" width="208" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_voltarPT"/>
+                                <connections>
+                                    <action selector="voltarAction:" destination="EBq-gj-gm0" eventType="touchUpInside" id="Da2-H7-ZJZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="phd-7l-zvA"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBack" destination="VpR-nf-nA6" id="Ass-Ma-aMB"/>
+                        <outlet property="lblWarning" destination="bhB-mv-SbY" id="2Bk-Dt-gqJ"/>
+                        <outlet property="txtCPF" destination="8Hk-vo-lxJ" id="lq2-KU-s4Z"/>
+                        <segue destination="pfq-Wm-lBH" kind="push" identifier="fromJaCadastrado" id="NwO-Iv-EId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t37-aR-dKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="2924"/>
+        </scene>
+        <!--NoSMS Controller-->
+        <scene sceneID="NLz-L4-rkt">
+            <objects>
+                <viewController id="3sf-jK-N27" customClass="NoSMSController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="89t-G6-ujo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="OtG-nk-73I">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
+                                <rect key="frame" x="694" y="700" width="208" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_voltarPT"/>
+                                <connections>
+                                    <action selector="voltarAction:" destination="3sf-jK-N27" eventType="touchUpInside" id="hHE-Um-Ou1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
+                                <rect key="frame" x="96" y="335" width="833" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.52401885078092769" green="0.5251997995364216" blue="0.54322091817692297" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fTp-ow-Tc6" userLabel="reenviar">
+                                <rect key="frame" x="408" y="456" width="208" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_reeviarPT"/>
+                                <connections>
+                                    <action selector="btnReeviar:" destination="3sf-jK-N27" eventType="touchUpInside" id="jNE-qX-rQh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(DD) 12345-6789" textAlignment="center" minimumFontSize="17" id="eZW-vL-hYV" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
+                                <rect key="frame" x="96" y="369" width="833" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Hf-h4-1y5"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBack" destination="OtG-nk-73I" id="92c-kL-m5r"/>
+                        <outlet property="txtSMS" destination="eZW-vL-hYV" id="grw-pG-KmE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AiD-7Y-QGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="3858"/>
+        </scene>
+        <!--Start Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="StartController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgtela1PT" id="xO8-xU-Aiz">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RtV-IF-wz6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Jz4-zo-vEd" kind="push" id="HzI-J2-fZI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RyG-Qu-YKz"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2370" y="531"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bzx-kC-eCA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="oy5-9F-5uQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WgN-pP-J1c">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lN5-wg-vzA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W4Q-Bq-gwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1230" y="531"/>
+        </scene>
+        <!--Confirmar Agenda Controller-->
+        <scene sceneID="7HL-WY-X9e">
+            <objects>
+                <viewController id="G4n-Au-59t" customClass="ConfirmarAgendaController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFL-ca-aBj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="ryY-JH-04L">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="jYv-Kf-MF2" userLabel="ViewtemCerteza">
+                                <rect key="frame" x="346" y="318" width="363" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JEA-Db-9US">
+                                        <rect key="frame" x="-11" y="178" width="183" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="VOLTAR">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnVoltar:" destination="G4n-Au-59t" eventType="touchUpInside" id="m6i-hL-V46"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LW2-56-T3a">
+                                        <rect key="frame" x="171" y="179" width="192" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="SIM">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mhV-pJ-7cr" kind="push" id="9kd-g9-kZg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUw-60-GWo">
+                                        <rect key="frame" x="-111" y="177" width="569" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u1z-a4-Ax5">
+                                        <rect key="frame" x="171" y="178" width="1" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tem certeza que não quer agendar agora?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z8p-EZ-knZ">
+                                        <rect key="frame" x="69" y="-2" width="204" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
+                                <rect key="frame" x="235" y="282" width="569" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hbm-ld-7jM">
+                                        <rect key="frame" x="282" y="265" width="287" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="NÃO">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mhV-pJ-7cr" kind="push" identifier="nao" id="ZLa-se-8z8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sz-j0-CFh">
+                                        <rect key="frame" x="22" y="0.0" width="522" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Lt-7D-fSr">
+                                        <rect key="frame" x="0.0" y="96" width="569" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Dh-gV-tB2">
+                                        <rect key="frame" x="0.0" y="263" width="569" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Epv-RF-pea">
+                                        <rect key="frame" x="282" y="264" width="1" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HRe-GB-WGT">
+                                        <rect key="frame" x="0.0" y="264" width="283" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="SIM">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="a5e-NO-3Jw" kind="push" identifier="sim" id="mXI-zT-xft"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.0" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vhs-qu-Fy9"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBG" destination="ryY-JH-04L" id="Cru-iW-rhy"/>
+                        <outlet property="viewGostaria" destination="y7W-aZ-zBe" id="bFe-Ve-EsY"/>
+                        <outlet property="viewTemCerteza" destination="jYv-Kf-MF2" id="VQk-RL-WpP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e29-wQ-T0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3627" y="6319"/>
+        </scene>
+        <!--Quero Participar Controller-->
+        <scene sceneID="TxV-WA-yuf">
+            <objects>
+                <viewController id="iBh-mf-okY" customClass="QueroParticiparController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yMw-uf-FYa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="1EP-kw-nxc">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA CONTINUAR NO JOGO," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0S-mq-ZwD">
+                                <rect key="frame" x="345" y="316" width="363" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7k6-a7-Fs0">
+                                <rect key="frame" x="186" y="339" width="653" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ACUMULE MAIS PONTOS A CADA NOVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vy8-k3-tL2">
+                                <rect key="frame" x="267" y="362" width="491" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERGUNTA RESPONDIDA CORRETAMENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zp-aG-iAe">
+                                <rect key="frame" x="261" y="385" width="503" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kvz-lK-rRk">
+                                <rect key="frame" x="425" y="669" width="175" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_voltarPT"/>
+                                <connections>
+                                    <action selector="btnVoltar:" destination="iBh-mf-okY" eventType="touchUpInside" id="FcF-nk-aVy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tJm-Um-KFy">
+                                <rect key="frame" x="425" y="590" width="175" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_mapaPT"/>
+                                <connections>
+                                    <segue destination="h6t-WZ-2NU" kind="push" id="TRz-op-ih8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0fA-18-RXh"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBG" destination="1EP-kw-nxc" id="R7c-4i-ux4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4M-Is-int" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4930" y="5082"/>
+        </scene>
+        <!--Mapas Controller-->
+        <scene sceneID="Dig-jG-31B">
+            <objects>
+                <viewController id="h6t-WZ-2NU" customClass="MapasController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aPJ-I2-QVq">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" id="mRE-vr-vPb">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAPA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TBF-Nj-9Oj">
+                                <rect key="frame" x="440" y="218" width="145" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="46"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uHr-7r-txZ">
+                                <rect key="frame" x="277" y="693" width="190" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_voltarPT"/>
+                                <connections>
+                                    <action selector="voltarAction:" destination="h6t-WZ-2NU" eventType="touchUpInside" id="JWF-Uz-K3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TUO-BK-nbt">
+                                <rect key="frame" x="117" y="300" width="365" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mapa2"/>
+                                <connections>
+                                    <action selector="btnMapa2:" destination="h6t-WZ-2NU" eventType="touchUpInside" id="biY-S7-ZDf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Oai-CZ-Gxi" userLabel="mapa1">
+                                <rect key="frame" x="532" y="300" width="365" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mapa1"/>
+                                <connections>
+                                    <action selector="btnMapa1:" destination="h6t-WZ-2NU" eventType="touchUpInside" id="xh7-S8-AiD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jux-25-0hi">
+                                <rect key="frame" x="697" y="679" width="200" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_proximo_totem"/>
+                                <connections>
+                                    <segue destination="mhV-pJ-7cr" kind="push" id="KtA-7u-gcJ"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="zsZ-uh-RTM">
+                                <rect key="frame" x="44" y="74" width="902" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qGc-bA-lOf"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBG" destination="mRE-vr-vPb" id="HP2-uJ-M5j"/>
+                        <outlet property="imgMapa" destination="zsZ-uh-RTM" id="4wx-U8-SMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAe-sh-C2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6434" y="5082"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg10PT" width="2048" height="1536"/>
+        <image name="bg2PT" width="2048" height="1536"/>
+        <image name="bg3PT" width="2048" height="1536"/>
+        <image name="bg4" width="2048" height="1536"/>
+        <image name="bg5" width="2048" height="1536"/>
+        <image name="bgtela1PT" width="2048" height="1536"/>
+        <image name="bt_aceitoPT" width="400" height="95"/>
+        <image name="bt_cancelarPT" width="400" height="95"/>
+        <image name="bt_cod_sms" width="842" height="411"/>
+        <image name="bt_comecarPT" width="400" height="95"/>
+        <image name="bt_confirmarPT" width="400" height="95"/>
+        <image name="bt_encerrar_participacaoPT" width="480" height="142"/>
+        <image name="bt_mapaPT" width="400" height="95"/>
+        <image name="bt_nao_recebi_smsPT" width="464" height="95"/>
+        <image name="bt_nao_tenho_cadastroPT" width="1503" height="181"/>
+        <image name="bt_prosseguirPT" width="400" height="95"/>
+        <image name="bt_proximo_totem" width="400" height="137"/>
+        <image name="bt_quero_continuarPT" width="480" height="142"/>
+        <image name="bt_reeviarPT" width="400" height="95"/>
+        <image name="bt_tenho_cadastroPT" width="1503" height="181"/>
+        <image name="bt_validar-1PT" width="400" height="95"/>
+        <image name="bt_voltarPT" width="400" height="95"/>
+        <image name="mapa1" width="1754" height="1240"/>
+        <image name="mapa2" width="1754" height="1240"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fDL-3h-bTX"/>
+        <segue reference="M4X-VO-HRF"/>
+        <segue reference="2Ub-7H-Qvd"/>
+        <segue reference="kZw-7N-kji"/>
+    </inferredMetricsTieBreakers>
 </document>
