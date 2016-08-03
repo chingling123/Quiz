@@ -33,19 +33,35 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
     var user: CadastroModel = CadastroModel()
         
     override func viewDidLoad() {
+        
+        if(!idiomaGeral){
+            txtCPF.placeholder = "PASSPORT NUMBER:"
+            txtName.placeholder = "NAME:"
+            txtCelular.placeholder = "CELLPHONE NUMBER:"
+            btnProsseguir.setImage(UIImage(named: "bt_nextEN"), forState: UIControlState.Normal)
+            btnComecar.setImage(UIImage(named: "bt_startEN"), forState: UIControlState.Normal)
+        }else{
+            txtCPF.placeholder = "CPF:"
+            txtName.placeholder = "NOME:"
+            txtCelular.placeholder = "NUMERO DO TELEFONE:"
+
+            btnProsseguir.setImage(UIImage(named: "bt_prosseguirPT"), forState: UIControlState.Normal)
+            btnComecar.setImage(UIImage(named: "bt_comecarPT"), forState: UIControlState.Normal)
+            
+            txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
+            //txtCPF.maskTemplate = "123.456.789-00"
+            txtCPF.maskDelegate = self
+            
+            txtCelular.mask = "({dd}) {ddddd}-{dddd}"
+            //txtCelular.maskTemplate = "/(99/) 99999-9999"
+            txtCelular.maskDelegate = self
+        }
+        
         super.viewDidLoad()
         btnComecar.hidden = true
         txtCelular.hidden = true
        // txtName.becomeFirstResponder()
         btnDataNasc.hidden = true
-        
-        txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
-        //txtCPF.maskTemplate = "123.456.789-00"
-        txtCPF.maskDelegate = self
-        
-        txtCelular.mask = "({dd}) {ddddd}-{dddd}"
-        //txtCelular.maskTemplate = "/(99/) 99999-9999"
-        txtCelular.maskDelegate = self
 
         //let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(btnIdle(_:)))
         
@@ -150,8 +166,11 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
         user.documento = txtCPF.text
         if(validarPrimeiro()){
             txtCPF.hidden = true
-            txtName.placeholder = "NÚMERO DE TELEFONE (DDD)"
-            txtEmail.placeholder = "DATA DE NASCIMENTO"
+            if(!idiomaGeral){
+                txtEmail.placeholder = "DATE OF BIRTH:"
+            }else{
+                txtEmail.placeholder = "DATA DE NASCIMENTO:"
+            }
             btnDataNasc.hidden = false
             
             txtName.hidden = true

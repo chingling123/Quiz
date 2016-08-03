@@ -13,8 +13,16 @@ class LanguageController: UIViewController {
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
     
+    @IBOutlet weak var imgBG: UIImageView!
+    @IBOutlet weak var btnComecar: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            imgBG.image = UIImage(named: "ng2EN")
+            btnComecar.setImage(UIImage(named: "bt_beginEN"), forState: UIControlState.Normal)
+        }
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(self.tempo, target: self, selector: #selector(LanguageController.decrementScore), userInfo: nil, repeats: false)
 

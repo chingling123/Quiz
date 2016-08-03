@@ -14,12 +14,28 @@ class TermController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var btnTermAcpet: UIButton!
     @IBOutlet weak var swtTermAcept: UISwitch!
     @IBOutlet weak var textRules: UITextView!
+    @IBOutlet weak var textRulesEN: UITextView!
+    
+    @IBOutlet weak var imgBG: UIImageView!
+    
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textRulesEN.hidden = true
+        
+        if(!idiomaGeral){
+            imgBG.image = UIImage(named: "bg10EN")
+            btnTermAcpet.setImage(UIImage(named: "bt_acceptEN"), forState: UIControlState.Normal)
+            textRules.hidden = true
+            textRulesEN.hidden = false
+        }else{
+            imgBG.image = UIImage(named: "bg10PT")
+            btnTermAcpet.setImage(UIImage(named: "bt_aceitoPT"), forState: UIControlState.Normal)
+        }
+        
         
         btnTermAcpet.enabled = false
         
