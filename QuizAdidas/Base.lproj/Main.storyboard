@@ -722,12 +722,41 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                     <connections>
                         <outlet property="dtpAgenda" destination="2ff-6o-hdN" id="cKs-ei-D0Q"/>
                         <outlet property="imgBG" destination="fp1-4T-K9I" id="FLh-d0-66k"/>
-                        <segue destination="mhV-pJ-7cr" kind="push" identifier="fromAgenda" id="fDL-3h-bTX"/>
+                        <segue destination="mhV-pJ-7cr" kind="push" identifier="fromAgendaOld" id="fDL-3h-bTX"/>
+                        <segue destination="gcd-az-RNx" kind="push" identifier="fromAgenda" id="UES-sO-tJp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njQ-yo-Qma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1747" y="6538"/>
+        </scene>
+        <!--AlertaSMS Final View Controller-->
+        <scene sceneID="GjN-Ik-HyZ">
+            <objects>
+                <viewController id="gcd-az-RNx" customClass="AlertaSMSFinalViewController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lWb-r7-Syo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="WsR-ta-I80">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IpF-B8-KiC">
+                                <rect key="frame" x="318" y="511" width="386" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="mhV-pJ-7cr" kind="push" identifier="final" id="d2A-Bh-OcK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ev4-eB-Eku"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XB0-Bu-FvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="7738"/>
         </scene>
         <!--Obrigado Controller-->
         <scene sceneID="kb8-zc-fpF">
@@ -860,7 +889,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEE-yg-pU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176" y="3858"/>
+            <point key="canvasLocation" x="-20" y="3858"/>
         </scene>
         <!--NoSMS Controller-->
         <scene sceneID="NLz-L4-rkt">
@@ -1012,7 +1041,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
                                             <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="mhV-pJ-7cr" kind="push" id="9kd-g9-kZg"/>
+                                            <segue destination="gcd-az-RNx" kind="push" id="Se6-r9-nfu"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUw-60-GWo">
@@ -1282,9 +1311,10 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n√
         <image name="mapa2" width="1754" height="1240"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="d2A-Bh-OcK"/>
+        <segue reference="Se6-r9-nfu"/>
+        <segue reference="M4X-VO-HRF"/>
         <segue reference="2Ub-7H-Qvd"/>
         <segue reference="NwO-Iv-EId"/>
-        <segue reference="KtA-7u-gcJ"/>
-        <segue reference="M4X-VO-HRF"/>
     </inferredMetricsTieBreakers>
 </document>

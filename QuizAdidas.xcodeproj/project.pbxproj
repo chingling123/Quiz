@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C2EC5E71D528344002B16C2 /* AlertaSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */; };
 		3C5ADA5A1D51044300855773 /* MoveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5ADA591D51044300855773 /* MoveKeyboard.swift */; };
+		3C8988811D52AD9700AABF90 /* AlertaSMSFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */; };
 		E9041A0E1D48000F00E5CF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */; };
 		E9041A101D48000F00E5CF3A /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0F1D48000F00E5CF3A /* StartController.swift */; };
 		E9041A131D48000F00E5CF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9041A111D48000F00E5CF3A /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSViewController.swift; sourceTree = "<group>"; };
 		3C5ADA591D51044300855773 /* MoveKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveKeyboard.swift; sourceTree = "<group>"; };
+		3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSFinalViewController.swift; sourceTree = "<group>"; };
 		E9041A0A1D48000F00E5CF3A /* QuizAdidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizAdidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9041A0F1D48000F00E5CF3A /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				E9EB04A11D50938900FDAAFB /* ProgressView.swift */,
 				E9041A111D48000F00E5CF3A /* Main.storyboard */,
+				3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				E93285671D4C2469008F2611 /* QueroParticiparController.swift in Sources */,
 				E9EB04BF1D509A3400FDAAFB /* AKMaskFieldEvent.swift in Sources */,
 				E9041A281D48207100E5CF3A /* PresentationController.swift in Sources */,
+				3C8988811D52AD9700AABF90 /* AlertaSMSFinalViewController.swift in Sources */,
 				E9DFE8911D4B8D85004C3E69 /* QuestionsController.swift in Sources */,
 				E9EB04A01D5088B800FDAAFB /* AgendaHorarios.swift in Sources */,
 				E9041A3A1D4906DA00E5CF3A /* PerguntaModel.swift in Sources */,
