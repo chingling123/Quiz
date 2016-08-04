@@ -49,7 +49,7 @@
                                     <action selector="btnIdle:" destination="Jz4-zo-vEd" eventType="touchUpInside" id="9uY-Lg-JoO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7km-qa-BJD" userLabel="Comecar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7km-qa-BJD" userLabel="Comecar">
                                 <rect key="frame" x="603" y="392" width="191" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_comecarPT"/>
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7I1-qd-RWG" userLabel="Prosseguir">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7I1-qd-RWG" userLabel="Prosseguir">
                                 <rect key="frame" x="741" y="690" width="198" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_prosseguirPT"/>
@@ -125,7 +125,7 @@
                                     <action selector="btnIdle:" destination="mHy-c6-C8z" eventType="touchUpInside" id="rvD-pC-nlR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hxT-rQ-Uu9" userLabel="NaoTenhoCadastro">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hxT-rQ-Uu9" userLabel="NaoTenhoCadastro">
                                 <rect key="frame" x="172" y="301" width="681" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_nao_tenho_cadastroPT"/>
@@ -133,7 +133,7 @@
                                     <segue destination="KUa-UE-5yo" kind="push" id="2Ch-C8-DwS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eA1-IS-A7B" userLabel="JaTenhoCadastro">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eA1-IS-A7B" userLabel="JaTenhoCadastro">
                                 <rect key="frame" x="172" y="508" width="681" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_tenho_cadastroPT"/>
@@ -141,7 +141,7 @@
                                     <segue destination="EBq-gj-gm0" kind="push" id="YAz-M0-RGc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BQD-36-2WD" userLabel="NaoRecebiSMS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BQD-36-2WD" userLabel="NaoRecebiSMS">
                                 <rect key="frame" x="749" y="650" width="242" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_nao_recebi_smsPT"/>
@@ -184,9 +184,13 @@
                                 <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5B-rU-bkR">
-                                <rect key="frame" x="442" y="244" width="30" height="30"/>
+                                <rect key="frame" x="348" y="239" width="124" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="OK"/>
+                                <color key="backgroundColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.63921568630000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btnOk:" destination="rsL-qf-Mcz" eventType="touchUpInside" id="zWv-Js-gAk"/>
                                 </connections>
@@ -198,11 +202,12 @@
                     <size key="freeformSize" width="500" height="300"/>
                     <connections>
                         <outlet property="dtpDataNasc" destination="F4z-sb-TDy" id="drJ-Hw-icn"/>
+                        <outlet property="okButton" destination="d5B-rU-bkR" id="dI9-OR-x3H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WD-oN-PqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="3548"/>
+            <point key="canvasLocation" x="4331" y="4032"/>
         </scene>
         <!--Official Register Controller-->
         <scene sceneID="yOD-vo-cyY">
@@ -581,7 +586,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <action selector="swtTermAcept:" destination="KUa-UE-5yo" eventType="valueChanged" id="LZ1-5g-r9Q"/>
                                 </connections>
                             </switch>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyc-e3-gf8" userLabel="btnTermAceite">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyc-e3-gf8" userLabel="btnTermAceite">
                                 <rect key="frame" x="778" y="650" width="166" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_aceitoPT"/>
@@ -823,20 +828,12 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZeD-Vc-Hwe" userLabel="btnConfirmar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZeD-Vc-Hwe" userLabel="btnConfirmar">
                                 <rect key="frame" x="711" y="685" width="213" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_confirmarPT"/>
                                 <connections>
                                     <action selector="btnConfirmar:" destination="a5e-NO-3Jw" eventType="touchUpInside" id="MEL-h4-J46"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nkg-Hx-GFc" userLabel="btnVoltar">
-                                <rect key="frame" x="74" y="685" width="204" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bt_cancelarPT"/>
-                                <connections>
-                                    <segue destination="G4n-Au-59t" kind="push" id="M4X-VO-HRF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HORÁRIOS DISPONÍVEIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bsH-ay-VZY">
@@ -846,6 +843,14 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Nkg-Hx-GFc" userLabel="btnVoltar">
+                                <rect key="frame" x="74" y="685" width="204" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_cancelarPT"/>
+                                <connections>
+                                    <segue destination="G4n-Au-59t" kind="push" id="M4X-VO-HRF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -963,7 +968,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <outlet property="delegate" destination="EBq-gj-gm0" id="TGP-WD-5na"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amU-OL-sUe" userLabel="Validar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amU-OL-sUe" userLabel="Validar">
                                 <rect key="frame" x="408" y="426" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_validar-1PT"/>
@@ -971,7 +976,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <action selector="btnValidar:" destination="EBq-gj-gm0" eventType="touchUpInside" id="Gqf-Rk-Fua"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bDq-yL-9KJ" userLabel="Validar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bDq-yL-9KJ" userLabel="Validar">
                                 <rect key="frame" x="50" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_voltarPT"/>
@@ -1049,7 +1054,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
                                 <rect key="frame" x="694" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_voltarPT"/>
@@ -1064,7 +1069,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <color key="textColor" red="0.52401885078092769" green="0.5251997995364216" blue="0.54322091817692297" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fTp-ow-Tc6" userLabel="reenviar">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fTp-ow-Tc6" userLabel="reenviar">
                                 <rect key="frame" x="408" y="456" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_reeviarPT"/>
@@ -1485,9 +1490,9 @@ The parties claim to be free and unhindered to execute this term, with no charge
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2Ub-7H-Qvd"/>
-        <segue reference="NwO-Iv-EId"/>
-        <segue reference="KtA-7u-gcJ"/>
+        <segue reference="kZw-7N-kji"/>
         <segue reference="UES-sO-tJp"/>
         <segue reference="M4X-VO-HRF"/>
+        <segue reference="fDL-3h-bTX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,11 +15,22 @@ protocol AddDateDelegate {
 public class DatePikerController: UIViewController{
     
 
+    @IBOutlet var okButton: UIButton!
     
     @IBOutlet weak var dtpDataNasc: UIDatePicker!
     var delegate: AddDateDelegate?
 
     public override func viewDidLoad() {
+        
+        okButton.layer.cornerRadius = 10
+        okButton.layer.masksToBounds = true
+        
+        if !idiomaGeral {
+            dtpDataNasc.locale = NSLocale(localeIdentifier: "en-US")
+        }else{
+            dtpDataNasc.locale = NSLocale(localeIdentifier: "pt-BR")
+        }
+        
         dtpDataNasc.maximumDate = NSCalendar.currentCalendar().dateByAddingUnit(.Year, value: -14, toDate: NSDate(), options: [])
     }
     

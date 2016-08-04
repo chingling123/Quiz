@@ -41,7 +41,7 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
             btnProsseguir.setImage(UIImage(named: "bt_nextEN"), forState: UIControlState.Normal)
             btnComecar.setImage(UIImage(named: "bt_startEN"), forState: UIControlState.Normal)
             
-            txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+            txtCPF.mask = "{........}"
             
             txtCPF.maskDelegate = self
             
