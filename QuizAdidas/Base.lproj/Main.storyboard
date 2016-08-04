@@ -1119,7 +1119,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1EN" id="xO8-xU-Aiz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado" id="xO8-xU-Aiz">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1203,7 +1203,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                             <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="gcd-az-RNx" kind="push" id="Se6-r9-nfu"/>
+                                            <segue destination="gcd-az-RNx" kind="push" identifier="nao" id="Z9F-t5-mBa"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUw-60-GWo1">
@@ -1462,9 +1462,9 @@ The parties claim to be free and unhindered to execute this term, with no charge
         </scene>
     </scenes>
     <resources>
+        <image name="Telas Quiz altarado" width="2133" height="1600"/>
         <image name="Telas Quiz altarado9" width="2133" height="1600"/>
         <image name="bg10PT" width="2048" height="1536"/>
-        <image name="bg1EN" width="2048" height="1536"/>
         <image name="bg2" width="2048" height="1536"/>
         <image name="bg3" width="2048" height="1536"/>
         <image name="bg4" width="2048" height="1536"/>
@@ -1490,9 +1490,9 @@ The parties claim to be free and unhindered to execute this term, with no charge
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2Ub-7H-Qvd"/>
-        <segue reference="kZw-7N-kji"/>
+        <segue reference="NwO-Iv-EId"/>
         <segue reference="tl3-C7-e0J"/>
-        <segue reference="UES-sO-tJp"/>
-        <segue reference="fDL-3h-bTX"/>
+        <segue reference="Z9F-t5-mBa"/>
+        <segue reference="ZLa-se-8z8"/>
     </inferredMetricsTieBreakers>
 </document>

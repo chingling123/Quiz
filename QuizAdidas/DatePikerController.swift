@@ -31,7 +31,7 @@ public class DatePikerController: UIViewController{
             dtpDataNasc.locale = NSLocale(localeIdentifier: "pt-BR")
         }
         
-        dtpDataNasc.maximumDate = NSCalendar.currentCalendar().dateByAddingUnit(.Year, value: -14, toDate: NSDate(), options: [])
+        //dtpDataNasc.maximumDate = NSCalendar.currentCalendar().dateByAddingUnit(.Year, value: -14, toDate: NSDate(), options: [])
     }
     
     @IBAction func btnOk(sender: AnyObject) {

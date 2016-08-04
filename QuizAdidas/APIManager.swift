@@ -215,8 +215,7 @@ struct ApiClient {
     
     internal func postSMS(ag: AgendumPost, completion: (success: Bool, message:JSONDictionary?) -> ()) {
         
-        let SMSObject: [String: AnyObject] = ["idCadastro": ag.idCadastro!,
-                                                       "celular": ag.horario!]
+        let SMSObject: [String: AnyObject] = ["idCadastro": ag.idCadastro!, "celular": ag.horario!]
         
         post(clientURLRequestJSON("api/SMS/", params: SMSObject)) { (success, object) -> () in
             
