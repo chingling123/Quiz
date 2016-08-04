@@ -947,22 +947,14 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE O CPF INFORMADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hyx-eq-04L">
-                                <rect key="frame" x="101" y="302" width="833" height="38"/>
+                                <rect key="frame" x="20" y="302" width="984" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.4916666666666667" green="0.4916666666666667" blue="0.4916666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVISO LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhB-mv-SbY">
-                                <rect key="frame" x="332" y="493" width="360" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92941176470588238" green="0.74117647058823533" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
-                                <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CPF" textAlignment="center" minimumFontSize="17" id="8Hk-vo-lxJ" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
-                                <rect key="frame" x="101" y="348" width="833" height="48"/>
+                                <rect key="frame" x="20" y="348" width="984" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -972,7 +964,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </textField>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="amU-OL-sUe" userLabel="Validar">
-                                <rect key="frame" x="408" y="425" width="208" height="46"/>
+                                <rect key="frame" x="408" y="426" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_validar-1PT"/>
                                 <connections>
@@ -987,6 +979,14 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                     <action selector="voltarAction:" destination="EBq-gj-gm0" eventType="touchUpInside" id="Da2-H7-ZJZ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhB-mv-SbY">
+                                <rect key="frame" x="278" y="493" width="469" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176470588238" green="0.74117647058823533" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1030,7 +1030,6 @@ The parties claim to be free and unhindered to execute this term, with no charge
                     </view>
                     <navigationItem key="navigationItem" id="yTM-ld-qlC"/>
                     <connections>
-                        <outlet property="imgBG" destination="23D-q6-4w2" id="2eQ-Z1-zRd"/>
                         <outlet property="imgBg" destination="rLF-gH-kzK" id="X7S-Mg-8fe"/>
                     </connections>
                 </viewController>
@@ -1059,7 +1058,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
-                                <rect key="frame" x="96" y="292" width="833" height="64"/>
+                                <rect key="frame" x="20" y="292" width="984" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.52401885078092769" green="0.5251997995364216" blue="0.54322091817692297" alpha="1" colorSpace="calibratedRGB"/>
@@ -1074,14 +1073,14 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="(DD) 12345-6789" textAlignment="center" minimumFontSize="17" id="eZW-vL-hYV" customClass="AKMaskField" customModule="QuizAdidas" customModuleProvider="target">
-                                <rect key="frame" x="96" y="369" width="833" height="49"/>
+                                <rect key="frame" x="20" y="369" width="984" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVISO LABEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HuK-ay-FeI">
-                                <rect key="frame" x="332" y="527" width="360" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alert" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HuK-ay-FeI">
+                                <rect key="frame" x="278" y="527" width="469" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.74117647060000003" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
@@ -1486,7 +1485,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2Ub-7H-Qvd"/>
-        <segue reference="kZw-7N-kji"/>
+        <segue reference="NwO-Iv-EId"/>
         <segue reference="KtA-7u-gcJ"/>
         <segue reference="UES-sO-tJp"/>
         <segue reference="M4X-VO-HRF"/>

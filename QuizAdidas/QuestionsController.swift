@@ -36,8 +36,30 @@ class QuestionsController: UIViewController {
         }
     
         setCustomBtn()
-        getPerguntas()
         
+        if(!idiomaGeral){
+            getQuestions();
+        }else{
+            getPerguntas()
+        }
+        
+    }
+
+    func getQuestions(){
+        ProgressView.shared.showProgressView(self)
+        let api = ApiClient(contentType: "application/json", customUrl: nil)
+        api.getQuestions { (success, message) in
+            
+            for i in message!{
+                let p = PerguntaModel.init(pergunta: i as! JSONDictionary)
+                self.perguntas.append(p)
+            }
+            
+            
+            self.CreateQuestionTimer()
+            self.realQuiz()
+            ProgressView.shared.hideProgressView()
+        }
     }
     
     func getPerguntas(){

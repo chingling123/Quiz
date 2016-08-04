@@ -176,6 +176,15 @@ struct ApiClient {
         }
     }
     
+    internal func getQuestions(completion:(success:Bool, message: JSONArray?) -> ()){
+        
+        get(clientURLRequestJSON("api/Questions/", params: nil)){(success, object) -> () in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                completion(success: success, message: object as? JSONArray)
+            })
+        }
+    }
+    
     internal func postRespostas(respostas: [RespostaModel], completion: (success: Bool, message:String?) -> ()) {
         
         var RespostasObject = Dictionary<String, AnyObject>()

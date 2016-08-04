@@ -85,7 +85,11 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
         txtCPF.resignFirstResponder()
         
         if(txtCPF.text == ""){
-            lblWarning.text = "Esqueceu de nos informar seu documento!"
+            if(!idiomaGeral){
+                lblWarning.text = "He forgot to tell us your document!"
+            }else{
+                lblWarning.text = "Esqueceu de nos informar seu documento!"
+            }
             lblWarning.hidden = false
         }else{
             ProgressView.shared.showProgressView(self)
@@ -101,8 +105,14 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
                 }else{
                     self.timer?.invalidate()
                     self.timer = nil;
-                    self.lblWarning.text = "CPF não cadastrado ou atingiu maximo de pontos"
+                    if(!idiomaGeral){
+                        self.lblWarning.text = "Document not registered or reached maximum points."
+                    }else{
+                        self.lblWarning.text = "CPF não cadastrado ou atingiu maximo de pontos."
+                    }
                     self.lblWarning.hidden = false
+                    
+                    
                 }
             })
         }

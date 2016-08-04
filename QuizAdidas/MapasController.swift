@@ -27,12 +27,12 @@ class MapasController: UIViewController {
         if(!idiomaGeral){
             lblMap.text = "MAP"
             btnVoltar.setImage(UIImage(named: "bt_backEN"), forState: UIControlState.Normal)
-            btnIr.setImage(UIImage(named: "bt_proximo_totem"), forState: UIControlState.Normal)
+            btnIr.setImage(UIImage(named: "bt_next_totemEN"), forState: UIControlState.Normal)
 
         }else{
             lblMap.text = "MAPA"
             btnVoltar.setImage(UIImage(named: "bt_voltarPT"), forState: UIControlState.Normal)
-            btnIr.setImage(UIImage(named: "bt_next_totemEN"), forState: UIControlState.Normal)
+            btnIr.setImage(UIImage(named: "bt_proximo_totem"), forState: UIControlState.Normal)
         }
         
         recognizer.addTarget(self, action: #selector(MapasController.profileImageHasBeenTapped))

@@ -28,7 +28,13 @@ public class ProgressView : UIViewController {
 
         let label = UILabel(frame: CGRectMake( self.view.frame.width/2-60,self.view.frame.height/2-60,r.bounds.width,r.bounds.height))
         
-        label.text = "Carregando"
+        if(!idiomaGeral){
+            label.text = "Loading"
+        }else{
+            label.text = "Carregando"
+        }
+        
+        
         label.textColor = UIColor.whiteColor()
         label.textAlignment = NSTextAlignment.Center
         
