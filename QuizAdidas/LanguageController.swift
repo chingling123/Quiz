@@ -13,8 +13,19 @@ class LanguageController: UIViewController {
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
     
+    @IBOutlet weak var imgBG: UIImageView!
+    @IBOutlet weak var btnComecar: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            imgBG.image = UIImage(named: "ng2EN")
+            btnComecar.setImage(UIImage(named: "bt_beginEN"), forState: UIControlState.Normal)
+        }else{
+            imgBG.image = UIImage(named: "bg2")
+            btnComecar.setImage(UIImage(named: "bt_comecarPT"), forState: UIControlState.Normal)
+        }
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(self.tempo, target: self, selector: #selector(LanguageController.decrementScore), userInfo: nil, repeats: false)
 
@@ -49,16 +60,4 @@ class LanguageController: UIViewController {
         performSegueWithIdentifier("SegExplanation", sender: self)
     }
     
-    
-
-//    @IBAction func btnNaoSouBr(sender: AnyObject) {
-//        print(" não sou BR clicado")
-//    }
-//    
-//    @IBAction func btnBack(sender: AnyObject) {
-//        navigationController?.popToRootViewControllerAnimated(true)
-//        
-//        //volta para tela anterior - grave isso para não ficar procurando
-//        //navigationController?.popViewControllerAnimated(true)
-//    }
 }

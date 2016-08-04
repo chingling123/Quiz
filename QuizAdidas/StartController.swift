@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+var idiomaGeral = true
+
 class StartController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,6 +18,14 @@ class StartController: UIViewController {
         CurrentUser.sharedUser.pontos = 0
     }
     
+    @IBAction func btnStartEN(sender: AnyObject) {
+        idiomaGeral = false
+        self.performSegueWithIdentifier("fromStart", sender: nil)
+    }
+
+    @IBAction func btnStartPT(sender: AnyObject) {
+        idiomaGeral = true
+    }
 
 }
 

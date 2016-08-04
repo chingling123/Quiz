@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="oy5-9F-5uQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="oy5-9F-5uQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -63,6 +63,8 @@
                     <navigationItem key="navigationItem" id="zOL-XL-tPO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnComecar" destination="7km-qa-BJD" id="VwR-xm-DfH"/>
+                        <outlet property="imgBG" destination="Iyq-KM-vPs" id="Xgd-Wt-l0p"/>
                         <segue destination="TuD-p4-UeQ" kind="push" identifier="SegExplanation" id="ZSH-2G-Aqe"/>
                     </connections>
                 </viewController>
@@ -82,13 +84,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtg-mm-CGs">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="btnIdle:" destination="TuD-p4-UeQ" eventType="touchUpInside" id="iJK-2F-d6q"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7I1-qd-RWG" userLabel="Prosseguir">
                                 <rect key="frame" x="741" y="690" width="198" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,11 +92,22 @@
                                     <segue destination="mHy-c6-C8z" kind="push" id="9OS-Tx-xad"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtg-mm-CGs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIdle:" destination="TuD-p4-UeQ" eventType="touchUpInside" id="iJK-2F-d6q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zII-Mt-MrC"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnProsseguir" destination="7I1-qd-RWG" id="LcY-bo-rfY"/>
+                        <outlet property="imgBG" destination="7nH-Rh-baH" id="4uZ-zD-f94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSW-Lk-xrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +161,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="hDf-nz-Ww0"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="btnJaCadastrado" destination="eA1-IS-A7B" id="1F7-Ac-ekl"/>
+                        <outlet property="btnNaoCadastrado" destination="hxT-rQ-Uu9" id="dtK-DB-kzf"/>
+                        <outlet property="btnSemSMS" destination="BQD-36-2WD" id="Y1X-bO-yi0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYw-NP-E3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,14 +332,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyc-e3-gf8" userLabel="btnTermAceite">
-                                <rect key="frame" x="778" y="650" width="166" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bt_aceitoPT"/>
-                                <connections>
-                                    <action selector="btnTermAcept:" destination="KUa-UE-5yo" eventType="touchUpInside" id="6jH-7j-Ado"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="Nzw-T4-hnD">
                                 <rect key="frame" x="124" y="192" width="782" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -452,6 +455,139 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                     <outlet property="delegate" destination="KUa-UE-5yo" id="MVT-02-jmK"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jyc-e3-gf8" userLabel="btnTermAceite">
+                                <rect key="frame" x="778" y="688" width="166" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bt_aceitoPT"/>
+                                <connections>
+                                    <action selector="btnTermAcept:" destination="KUa-UE-5yo" eventType="touchUpInside" id="6jH-7j-Ado"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" id="RAP-Ns-i09" userLabel="textRulesEN">
+                                <rect key="frame" x="124" y="192" width="782" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">REGULATIONS
+CONTEST “BOLA PRA JOGO”
+
+1. PROMOTING COMPANY (Trustee). HAVAS SPORTS &amp; ENTRETENIMENTO BRASIL LTDA., hereby known as “PROMOTER”, inscribed in the CNPJ/MF under the number 12.891.442/0001-54, established at Avenida Magalhães de Castro, 4800, 22° floor, Continental Tower, CEP 05502-001, São Paulo,  SP, Brazil.
+1.2. Affiliated Companies. 
+1.2.1. ADIDAS DO BRASIL LTDA., inscribed at the CNPJ/MF under the number 42.274.696/0001-94, established at Alameda Rio Negro, 585, 9° floor, Alphaville, CEP 06454-000, Barueri, SP, Brazil.
+1.2.2. FLA 151 FUTEBOL ARTIGO DE VESTUÁRIO E ACESSÓRIOS ESPORTIVOS LTDA. (registered name), trade name: Nação Rubro Negra, inscribed in the CNPJ/MF under the number 23.438.800/0001-94, established at Avenida N-S PAA 10292/PAL 38883, 135, # 1074, Jacarepaguá, CEP 22.775-027, Rio de Janeiro, RJ, Brazil
+1.2.3. SBF Comércio de Artigos Esportivos Ltda. (registered name), trade name: Loja Centauro inscribed at the CNPJ/MF under the number 06.347.409/0001-65, established at Rua Hugo D’antola, Lapa, CEP 05038-090, São Paulo, SP, Brazil. 
+1.2.4. CINEMARK BRASIL S/A, inscribed at the CNPJ/MF under the number 00.779.721/0001-41, established at Avenida Dr. Chucri Zaidan, 920, tower I, 15° floor, CEP 04583-904, São Paulo, SP, Brazil.
+
+2. Free Prize Distribution Category. The distribution of free prizes in this contest will be done under the Contest Category
+
+3. Products (objects of the commercial promotion). The participation in this promotion may be linked to obligatory purchase of products and/or services provided by the Promoter or Affiliated Companies.
+
+4. Area of Operations. The Contest can only be undertaken by persons older than fourteen (14) years old that are present at the “Creators Base” area constructed in Rio de Janeiro, RJ, Brazil, as stated in this Regulation.
+
+5. Period of Operations. The Contest will begin on the 3rd of August, 2016 and will finish on the 22 of August, 2016, when the final result will be revealed – timetable detailed below:
+5.1. Participation Period: From 03/August/2016 to 22/August/2016, at the “Creators Base” area, build in the Metropolitano Mall, located in Rio de Janeiro, opening hours: Monday to Saturday, from 10AM to 10PM, Sundays from 11PM to 10PM, holidays from 1PM to 10PM.
+
+
+
+6. Rules of the Contest.
+	6.1. The “Creators Base” area will be built at the Metropolitano Mall, situated at Av. Embaixador Aberlardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ, where sports activities will be offered: Soccer (shot at the goal) and Basketball (hoop shooting) and virtual reality experiences; open to the participation of anyone over fourteen (14) years old present at the “Creators Base” area, in the terms of this Regulation.
+6.1.1. When one of the criteria described below is met, access to the space will be granted after the completion of a registration that must be made at the “Creators Base” area with a promoter that will be standing at the entrance of the area or in one of the six totems that will be scattered around the mall.
+At the moment of the registration, the person interested in taking part in the activities must provide the following personal data:
+Brazilian Citizens or Denizens: full Name, CPF, cellphone number, e-mail and date of birth.
+Foreigners: full Name, passport number, cellphone number, e-mail and date of birth.  
+
+6.2. Conditions and Means of Participation. During the informed period in the item 5.1 and according to anterior items, those interested in visiting or participating in the activities may choose one of the following manners:
+
+6.2.1. Free Access: Any person interested in participating in one of the sports activities (basketball of soccer) may do so after registration. The registration will grant a bonus, common to all participants, of 1 minute in the basketball activity and 3 goal shots in the soccer activity
+
+6.2.2. Participation in a Sport related Quiz with random questions that will be available in the totems (electronic terminals) located around the Mall. Depending on the results of the quiz, the participant can obtain some bonuses such as: extra time and extra kicks at the basketball and soccer activities respectively, after scoring.
+Each quiz phase consists of by questions (worth 1 point each); the participant must answer each one of them in up to 15 seconds; if the participant fails to answer in the given time, the answer will be considered incorrect. The benefit will be granted to the participant when he accumulates 6 right answers, given at one or more totems around the Mall.
+The participant will have 6 attempts, considering all 6 totems scattered at the Mall.
+The max sum of the points a participant can have is 36 (the sum of right answers of all questions in the 6 totems)
+ 6 points are worth 20 extra seconds in the basketball activity OR 1 kick at the goal in the soccer activity. The participant must choose the activity in which he will spend his points.
+At the end, if the participant gets all 36 questions right, he can accumulate 2 extra minutes in the basketball activity or 6 goal kicks.
+The bonus will be given only when the participant reaches 6, 12, 18, 24, 30 or 36 points. If the participant gets a score between these numbers, his points will be rounded down to the nearest point
+Example: if the participant gets 14 points, he gets 2 bonus (12 points); if he gets 25 points, he is granted 4 bonus (24 points) 
+After the quiz, the participant will receive an SMS with a code that must be presented at the entrance of the “Creators Base” area, thus proving the bonus received at the totems.
+
+6.2.2. Purchases at the Adidas Store in  Metropolitano Mall or Gávea Mall: During the period of the promotion, each R$50,00 spent will be worth a bonus of 1 extra minute at the basketball activity or 3 kicks at the soccer activity.  To have access at the area, the consumer must present the purchase receipt and the bonus voucher given to him by the salesperson at the stores stated above.
+
+6.2.3. Purchases at the Nação Rubro Negro Store: During the period of the promotion, each R$50,00 spent will be worth 1 Fast Pass (priority at the activity queue) to be redeemed at the basketball activity or the soccer activity. To access the space, the consumer must present the fast pass voucher and the purchase tax coupon.
+
+6.2.4. Purchases at Centauro Store: During the period of the promotion, each R$50,00 spent will be worth 1 Fast Pass (priority at the activity queue) to be redeemed at the basketball activity or the soccer activity. To access the space, the consumer must present the fast pass voucher and the purchase receipt
+6.2.5. Cinemark Clients: During the period of the promotion, each R$50,00 spent will be worth 1 Fast Pass (priority at the activity queue) to be redeemed at the basketball activity or the soccer activity. To access the space, the consumer must present the movie ticket.
+
+6.2.6. If any of these condition are met, the participant may take part in the basketball or soccer activities during the period of the contest and the best participants of the day will receive prizes.
+	
+6.3. About Disqualification.
+6.3.1. Participants that do not observe the conditions of this Regulation, that commit any kind of verified fraud or that practice any wrongdoing that may alter the results of this Contest will be summarily disqualified/eliminated
+6.3.2. Disqualified/ eliminated participants will not be informed of such decision and no further responsibility will be held against the PROMOTER
+6.4.  Within this Contest, only entries which thoroughly fulfill the conditions and deadlines of these Regulations will be considered valid.
+	
+7. Results assessment.
+7.1. This Contest will assure equal conditions to all, according to entries and daily competitions, the PROMOTER will evaluate individual performance in basketball and soccer activities, considering the following criteria: 
+7.1.1. Basketball: 
+Ball through the loop, backboard hit and;
+How many scores within the allotted time (1 minute minimum). 
+7.1.2. Soccer:
+Ball kicked inside the goal (3 kicks) and;
+Kick speed.
+
+7.2. Assessment Manner. At the end of each day, the PROMOTER will establish the daily winner in each of the activities (basketball and soccer), that is, prizes will be given daily, from the 3rd to the 22nd of August; there will also be prizes for the fastest kick at soccer (the speed of the kick will be verified through an equipment called Speed Gun*) and the most efficient  shooter at basketball (most points in 1 minute).
+
+*Technical information about the Speed Gun equipment: it is used by law enforcers to measure the speed of moving cars and it is frequently used in professional sport competitions, measuring the speed in various sport categories.
+
+7.2.1. In the event of a tie between contestants, the winner will be the participant who registered first.
+7.2.3. At the end of the Contest, 40 participants will be rewarded (20 winners in each category) with the prizes described in item 8. 
+7.3. The winners list will be updated daily during the period of the Contest and will be released at the Creators Base area, located inside Metropolitano Mall, situated at Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ and at the Adidas Store at the Metropolitano Mall.
+
+8. PRIZES (Description and Quantity).
+8.1. Description and Quantity:
+Soccer Activity Prize: One Adidas Errejota Top Replique soccer ball (100% Poliurethane, Size 05: Approximate weight: 440g), value: R$ 119,99. Quantity: Twenty (20). 
+Basketball Activity Prize: One Adidas ALL COURT – BASKETBALL ball (100% Poliurethane and others, 90g, 100% Butilen), value: R$ 179,99. Quantity: Twenty (20).
+In total, 40 prizes will be awarded during the period of the promotion (1 basketball and 1 soccer ball per day).
+TOTAL AMOUNT OF PRIZES: Forty (40).
+TOTAL PRIZE VALUE: R$ 5.999,60. 
+8.2. Prizes will be on exhibition at the Creators Base area, located inside the Metropolitano Mall, situated at Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ.
+
+9. Prize delivery.
+9.1. Between August 3 and August 22, 2016, prizes will be handed over to the winner, free of charge, at the Adidas Store, 1st floor, inside Metropolitano Mall, located at Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ. After the end of the Contest and up to 30 days after the announcement of the results, winners must pick up their prizes at the Adidas store at the Metropolitano Mall.
+9.2. Winners will be informed in up to 48 hours after the results of the day. 
+9.3. To withdraw prizes, winners must fill in a receipt and sign (together with a legal representative, if minor), granting discharge of further responsibilities to the PROMOTER of this Contest.
+9.4.	Prizes are individual and non transferable and cannot be converted, partially or totally, into currency. 
+9.5. All expenses towards the delivery of the prizes, including taxes, duties, social security contribution and/or fees will be paid by the PROMOTER
+9.6. If the winner eventually dies, the prize will be handed over to his legal representative. 
+
+10. Prize limitation period. If the prize won in the Contest is not withdrawn within 180 (one hundred and eighty) days after the announcement of the results, the winner will no longer have the right to it and its correspondent value will be sent, by the PROMOTER, to the National Treasury, within 10 (ten) days of the loss of the right to it . 
+
+11. Media channels and announcements. Contest advertising will happen via a series of materials available in places defined by the PROMOTER.  CAIXA Authorization Certificate number will be released, publicized, made public, informed expressly in all means and materials used in the advertising of the Contest. 
+11.1. Regulation will be available for consultation in the totems and the Creators Base area located inside the Metropolitano Mall, situated at Av. Embaixador Abelardo Bueno, 1300, Barra da Tijuca, Rio de Janeiro/RJ.
+
+12. Jury Committee. Doubts and disputes among participants of the promotion will be settled by its organizers; if further debate is necessary, they will be submitted to CEPCO/CAIXA, and if still no solution is presented, participants may, at any time, as long as it is justified, file a complaint  during the period of the promotion, to the consumer defense and protection agencies at their home town or state.
+
+13. Assignment of Rights of Image/Name/Voice Usage and authorization to receive email and SMS. Participants of this Contest assign to the PROMOTER, free of charge, the usage of their images, names and voices (if applicable) in any kind of promotional media and material used to release the results of the Contest in Brazil and abroad for the period of 01 (one) year after the end of the Contest.  
+13.1. Contest Participants expressly declare that they are aware of and agree to the permanence of their photos which may appear on the internet and social media, even after the end of the stipulated period, without this meaning any infringement to authorial rights and/or personal rights. 
+13.2. Images may be edited, modified and altered by the PROMOTER as it seems fit and as it wishes, without the need of information or acquiescence by their protagonists
+              13.3. Contest Participants authorize the PROMOTER and its Affiliated Companies the submission of SMSs and e-mails to those numbers and emails registered in the promotion.  
+
+14. Clause recognition and acceptance of the Rules of this Regulation. By taking part in this promotion the participant implicitly recognizes all clauses and accepts the conditions and rules of this Regulation.
+FREE DISTRIBUTION – CAIXA AUTHORIZATION CERTIFICATE N. 3-1837/2016.
+
+
+
+Terms of Authorization of Image Use
+
+
+I authorize adidas group ("LICENSEE"), a limited liability company, headquartered at Alameda Rio Negro n. 585, Demini Building, Centro Administrativo Rio Negro, 8 floor, 81 sets and 82, 9 floor, sets 91 and 92 and 10 floor - section, Alphaville Centro Industrial e Empresarial, Barueri / SP, enrolled with the CNPJ under No. 42.274.696/0001-94, specifically to the use of my image and voice, and free of charge, in photos and footage arising from my participation in the virtual reality experience promoted by LICENSEE to the general public in the Creators House located in the Shopping Metropolitano by any means or in any platform existing or that may be invented.
+
+
+The parties claim to be free and unhindered to execute this term, with no charge, encumbrance or obligation to prevent them from doing so. Parties undertake to comply with the provisions herein by themselves, their heirs and legal successors.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KUa-UE-5yo" id="DuF-Xy-XCJ"/>
+                                </connections>
+                            </textView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="RnC-xc-4Lg">
                                 <rect key="frame" x="704" y="650" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -467,8 +603,10 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="btnTermAcpet" destination="jyc-e3-gf8" id="bS1-vd-LfG"/>
+                        <outlet property="imgBG" destination="REz-Pv-16B" id="PxH-dK-etG"/>
                         <outlet property="swtTermAcept" destination="RnC-xc-4Lg" id="xgU-bA-hNr"/>
                         <outlet property="textRules" destination="Nzw-T4-hnD" id="d7w-x2-aAt"/>
+                        <outlet property="textRulesEN" destination="RAP-Ns-i09" id="nQ8-Po-6TA"/>
                         <segue destination="5E9-qC-6qn" kind="push" identifier="toCreateRegister" id="CaD-Bn-W0D"/>
                     </connections>
                 </viewController>
@@ -650,6 +788,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                     <navigationItem key="navigationItem" id="ZM5-LC-Mtw"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="MiniTextPoints" destination="Npz-JC-t5a" id="Y7E-ok-iKB"/>
                         <outlet property="btnEncerrar" destination="YCE-1r-DXz" id="A8H-oo-DjQ"/>
                         <outlet property="btnProsseguir" destination="zFG-gQ-e0G" id="p0R-l1-jCY"/>
                         <outlet property="btnQuero" destination="Aih-PJ-4iS" id="077-KJ-HYE"/>
@@ -788,6 +927,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imgBG" destination="QoA-iK-qzN" id="3XW-E6-I1H"/>
+                        <outlet property="lblObrigado" destination="9bV-2O-PX0" id="9pa-sb-g7L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XxQ-c7-WjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -853,7 +993,10 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                     <navigationItem key="navigationItem" id="phd-7l-zvA"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="bDq-yL-9KJ" id="LCY-ny-pO0"/>
+                        <outlet property="btnValidar" destination="amU-OL-sUe" id="8ph-zE-R5t"/>
                         <outlet property="imgBack" destination="VpR-nf-nA6" id="Ass-Ma-aMB"/>
+                        <outlet property="lblDigite" destination="Hyx-eq-04L" id="jDf-j3-O0M"/>
                         <outlet property="lblWarning" destination="bhB-mv-SbY" id="2Bk-Dt-gqJ"/>
                         <outlet property="txtCPF" destination="8Hk-vo-lxJ" id="lq2-KU-s4Z"/>
                         <segue destination="pfq-Wm-lBH" kind="push" identifier="fromJaCadastrado" id="NwO-Iv-EId"/>
@@ -871,10 +1014,6 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="rLF-gH-kzK">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23D-q6-4w2">
                                 <rect key="frame" x="318" y="511" width="386" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -882,10 +1021,18 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                     <action selector="okAction:" destination="UKy-is-yC3" eventType="touchUpInside" id="GST-2S-OzB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Telas Quiz altarado9" id="rLF-gH-kzK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yTM-ld-qlC"/>
+                    <connections>
+                        <outlet property="imgBG" destination="23D-q6-4w2" id="2eQ-Z1-zRd"/>
+                        <outlet property="imgBg" destination="rLF-gH-kzK" id="X7S-Mg-8fe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEE-yg-pU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -899,10 +1046,6 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="OtG-nk-73I">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c4g-87-1E6" userLabel="Validar">
                                 <rect key="frame" x="694" y="650" width="208" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -911,8 +1054,8 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                     <action selector="voltarAction:" destination="3sf-jK-N27" eventType="touchUpInside" id="hHE-Um-Ou1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
-                                <rect key="frame" x="96" y="335" width="833" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIGITE SEU TELEFONE UTILIZADO NO CADASTRO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hom-bb-5B6">
+                                <rect key="frame" x="96" y="292" width="833" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.52401885078092769" green="0.5251997995364216" blue="0.54322091817692297" alpha="1" colorSpace="calibratedRGB"/>
@@ -941,14 +1084,21 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                 <color key="textColor" red="0.76862745099999996" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" id="OtG-nk-73I">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Hf-h4-1y5"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnReenviar" destination="fTp-ow-Tc6" id="2Vc-3s-Nor"/>
+                        <outlet property="btnVoltar" destination="c4g-87-1E6" id="vgF-o2-MLd"/>
                         <outlet property="imgBack" destination="OtG-nk-73I" id="92c-kL-m5r"/>
                         <outlet property="lblAlert" destination="HuK-ay-FeI" id="uO2-7f-DCa"/>
+                        <outlet property="lblSMS" destination="hom-bb-5B6" id="6d3-mj-Bw0"/>
                         <outlet property="txtSMS" destination="eZW-vL-hYV" id="grw-pG-KmE"/>
                         <segue destination="UKy-is-yC3" kind="push" identifier="smsText" id="dyI-L0-AEM"/>
                     </connections>
@@ -965,7 +1115,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgtela1PT" id="xO8-xU-Aiz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1EN" id="xO8-xU-Aiz">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -973,7 +1123,15 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="btnStartPT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a0G-U7-kaf"/>
                                     <segue destination="Jz4-zo-vEd" kind="push" id="HzI-J2-fZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AzB-0h-YPt">
+                                <rect key="frame" x="705" y="422" width="129" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnStartEN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6PI-DR-hvz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1086,7 +1244,7 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sz-j0-CFh">
-                                        <rect key="frame" x="22" y="0.0" width="522" height="171"/>
+                                        <rect key="frame" x="22" y="0.0" width="522" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1129,13 +1287,72 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                 </subviews>
                                 <color key="backgroundColor" red="0.65098039215686276" green="0.0" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <view contentMode="scaleToFill" id="jYv-Kf-MF2" userLabel="ViewtemCerteza">
+                                <rect key="frame" x="346" y="318" width="363" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JEA-Db-9US">
+                                        <rect key="frame" x="-11" y="178" width="183" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="VOLTAR">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnVoltar:" destination="G4n-Au-59t" eventType="touchUpInside" id="m6i-hL-V46"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LW2-56-T3a">
+                                        <rect key="frame" x="171" y="179" width="192" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="SIM">
+                                            <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mhV-pJ-7cr" kind="push" id="9kd-g9-kZg"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JUw-60-GWo">
+                                        <rect key="frame" x="-111" y="177" width="569" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u1z-a4-Ax5">
+                                        <rect key="frame" x="171" y="178" width="1" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tem certeza de que não quer agendar agora?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="z8p-EZ-knZ">
+                                        <rect key="frame" x="69" y="-2" width="204" height="171"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vhs-qu-Fy9"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="JEA-Db-9US" id="MOo-4C-giF"/>
+                        <outlet property="btnNao" destination="hbm-ld-7jM" id="xnt-iM-GE7"/>
+                        <outlet property="btnSim" destination="HRe-GB-WGT" id="eQw-ii-EHe"/>
+                        <outlet property="btnYes" destination="LW2-56-T3a" id="JZj-Rr-MPb"/>
                         <outlet property="imgBG" destination="ryY-JH-04L" id="Cru-iW-rhy"/>
+                        <outlet property="lblAgendeSuaParticipação" destination="1Lt-7D-fSr" id="vIj-fT-1K0"/>
+                        <outlet property="lblQuerPedalar" destination="8Sz-j0-CFh" id="z7w-ux-Ybh"/>
+                        <outlet property="lblTemCerteza" destination="z8p-EZ-knZ" id="bRv-rL-tka"/>
                         <outlet property="viewGostaria" destination="y7W-aZ-zBe" id="bFe-Ve-EsY"/>
                         <outlet property="viewTemCerteza" destination="jYv-Kf-MF2" id="VQk-RL-WpP"/>
                     </connections>
@@ -1156,29 +1373,22 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA CONTINUAR NO JOGO," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0S-mq-ZwD">
-                                <rect key="frame" x="345" y="316" width="363" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PARA CONTINUAR NO JOGO," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k0S-mq-ZwD">
+                                <rect key="frame" x="20" y="316" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7k6-a7-Fs0">
-                                <rect key="frame" x="186" y="339" width="653" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7k6-a7-Fs0">
+                                <rect key="frame" x="20" y="339" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ACUMULE MAIS PONTOS A CADA NOVA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vy8-k3-tL2">
-                                <rect key="frame" x="267" y="362" width="491" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERGUNTA RESPONDIDA CORRETAMENTE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zp-aG-iAe">
-                                <rect key="frame" x="261" y="385" width="503" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E ACUMULE MAIS PONTOS A CADA NOVA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vy8-k3-tL2">
+                                <rect key="frame" x="20" y="362" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1200,13 +1410,26 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
                                     <segue destination="h6t-WZ-2NU" kind="push" id="TRz-op-ih8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERGUNTA RESPONDIDA CORRETAMENTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Zp-aG-iAe">
+                                <rect key="frame" x="20" y="384" width="984" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="25"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="0fA-18-RXh"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="btnBack" destination="kvz-lK-rRk" id="xFx-wu-C1O"/>
+                        <outlet property="btnMap" destination="tJm-Um-KFy" id="S8n-2Z-rDC"/>
                         <outlet property="imgBG" destination="1EP-kw-nxc" id="R7c-4i-ux4"/>
+                        <outlet property="lblPreMap1" destination="k0S-mq-ZwD" id="Uom-Qk-BbC"/>
+                        <outlet property="lblPreMap2" destination="7k6-a7-Fs0" id="Iqt-xe-m3m"/>
+                        <outlet property="lblPreMap3" destination="Vy8-k3-tL2" id="IKJ-29-n1P"/>
+                        <outlet property="lblPreMap4" destination="7Zp-aG-iAe" id="P2G-wx-7hW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4M-Is-int" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1286,11 +1509,11 @@ As Partes declaram estar livres e desimpedidas para celebrar o presente temo, n�
     <resources>
         <image name="Telas Quiz altarado9" width="2133" height="1600"/>
         <image name="bg10PT" width="2048" height="1536"/>
+        <image name="bg1EN" width="2048" height="1536"/>
         <image name="bg2" width="2048" height="1536"/>
         <image name="bg3" width="2048" height="1536"/>
         <image name="bg4" width="2048" height="1536"/>
         <image name="bg5" width="2048" height="1536"/>
-        <image name="bgtela1PT" width="2048" height="1536"/>
         <image name="bt_aceitoPT" width="400" height="95"/>
         <image name="bt_cancelarPT" width="400" height="95"/>
         <image name="bt_cod_sms" width="842" height="411"/>

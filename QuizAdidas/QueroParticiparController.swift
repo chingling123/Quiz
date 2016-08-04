@@ -10,8 +10,22 @@ import UIKit
 
 class QueroParticiparController: UIViewController {
 
+    @IBOutlet weak var lblPreMap4: UILabel!
+    @IBOutlet weak var lblPreMap3: UILabel!
+    @IBOutlet weak var lblPreMap2: UILabel!
+    @IBOutlet weak var lblPreMap1: UILabel!
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnMap: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            btnMap.setImage(UIImage(named: "bt_mapEN"), forState: UIControlState.Normal)
+            btnBack.setImage(UIImage(named: "bt_back-1EN"), forState: UIControlState.Normal)
+        }else{
+            btnMap.setImage(UIImage(named:"bt_mapaPT" ), forState: UIControlState.Normal)
+            btnBack.setImage(UIImage(named:"bt_voltarPT" ), forState: UIControlState.Normal)
+        }
 
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
             self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)

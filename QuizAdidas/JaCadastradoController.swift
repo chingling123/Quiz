@@ -13,6 +13,9 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     @IBOutlet weak var lblWarning: UILabel!
     @IBOutlet weak var txtCPF: AKMaskField!
     @IBOutlet weak var imgBack: UIImageView!
+    @IBOutlet weak var btnValidar: UIButton!
+    @IBOutlet weak var lblDigite: UILabel!
+    @IBOutlet weak var btnBack: UIButton!
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
@@ -22,11 +25,24 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblWarning.hidden = true
+        if(!idiomaGeral){
+            btnValidar.setImage(UIImage(named: "bt_validateEN"), forState: UIControlState.Normal)
+            lblDigite.text = "TYPE IN THE CPF/PASSPORT NUMBER YOU INFORMED IN THE REGISTRATION"
+            txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+            //txtCPF.maskTemplate = "123.456.789-00"
+            txtCPF.maskDelegate = self
+            btnBack.setImage(UIImage(named: "bt_back-1EN"), forState: UIControlState.Normal)
+            
+        }else{
+            btnValidar.setImage(UIImage(named: "bt_validar-1PT"), forState: UIControlState.Normal)
+            lblDigite.text = "DIGITE SEU CPF UTILIZADO NO CADASTRO DO TOTEM ANTERIOR"
+            txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
+            //txtCPF.maskTemplate = "123.456.789-00"
+            txtCPF.maskDelegate = self
+            btnBack.setImage(UIImage(named: "bt_voltarPT"), forState: UIControlState.Normal)
+        }
         
-        txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
-        //txtCPF.maskTemplate = "123.456.789-00"
-        txtCPF.maskDelegate = self
+        lblWarning.hidden = true
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
             self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)

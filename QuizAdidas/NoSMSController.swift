@@ -13,6 +13,14 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     @IBOutlet weak var txtSMS: AKMaskField!
     @IBOutlet weak var imgBack: UIImageView!
     @IBOutlet var lblAlert: UILabel!
+    var alertaTitle: String!
+    var alertaText: String!
+    var celularInvalido: String!
+    
+    
+    @IBOutlet weak var btnReenviar: UIButton!
+    @IBOutlet weak var btnVoltar: UIButton!
+    @IBOutlet weak var lblSMS: UILabel!
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
@@ -21,6 +29,23 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            celularInvalido = "Cellphone not found."
+            alertaTitle = "ALERT"
+            alertaText = "FORGOT TO INSERT THE  CELLPHONE NUMBER"
+            btnVoltar.setImage(UIImage(named: "bt_backEN"), forState: UIControlState.Normal)
+            btnReenviar.setImage(UIImage(named: "bt_resendEN"), forState: UIControlState.Normal)
+            lblSMS.text = "TYPE IN THE PHONE NUMBER YOU INFORMED IN THE REGISTRATION"
+        }else{
+            celularInvalido = "Celular não encontrado."
+            alertaTitle = "ALERTA"
+            alertaText = "ESQUECEU DE INSERIR O NUMERO DO CELULAR"
+            lblSMS.text = "DIGITE SEU TELEFONE UTILIZADO NO CADASTRO"
+            btnVoltar.setImage(UIImage(named: "bt_voltarPT"), forState: UIControlState.Normal)
+            btnReenviar.setImage(UIImage(named: "bt_reeviarPT"), forState: UIControlState.Normal)
+
+        }
         
         self.lblAlert.hidden = true
         
@@ -59,7 +84,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
 
     @IBAction func btnReeviar(sender: AnyObject) {
         if(txtSMS.text == ""){
-            let alert = UIAlertController(title: "Alerta", message: "ESQUECEU DE INSERIR O NUMERO DO CELULAR", preferredStyle: UIAlertControllerStyle.Alert)
+            let alert = UIAlertController(title: alertaTitle, message: alertaText, preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }else{
@@ -72,7 +97,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
                 if(success){
                     self.performSegueWithIdentifier("smsText", sender: nil)
                 }else{
-                    self.lblAlert.text = "Celular não encontrado."
+                    self.lblAlert.text = celularInvalido
                     self.lblAlert.hidden = false
                 }
             })
