@@ -722,7 +722,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bt_prosseguirPT"/>
                                 <connections>
-                                    <segue destination="G4n-Au-59t" kind="push" id="SqI-E8-Ucc"/>
+                                    <segue destination="a5e-NO-3Jw" kind="push" id="0DF-BD-Ypv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PONTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Npz-JC-t5a">
@@ -732,7 +732,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G8x-dJ-mre">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G8x-dJ-mre">
                                 <rect key="frame" x="428" y="265" width="154" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="52"/>
@@ -894,6 +894,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ev4-eB-Eku"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="bkgImg" destination="WsR-ta-I80" id="TIQ-u7-q4w"/>
                     </connections>
@@ -1180,7 +1181,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="jYv-Kf-MF2" userLabel="ViewtemCerteza">
+                            <view hidden="YES" contentMode="scaleToFill" id="jYv-Kf-MF2" userLabel="ViewtemCerteza">
                                 <rect key="frame" x="346" y="318" width="363" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1232,7 +1233,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 </subviews>
                                 <color key="backgroundColor" red="0.68235294120000001" green="0.1137254902" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
+                            <view contentMode="scaleToFill" id="y7W-aZ-zBe" userLabel="ViewGostariaDeAproveitar">
                                 <rect key="frame" x="235" y="282" width="569" height="332"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -1244,7 +1245,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                             <color key="titleColor" red="1" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="mhV-pJ-7cr" kind="push" identifier="nao" id="ZLa-se-8z8"/>
+                                            <segue destination="gcd-az-RNx" kind="push" identifier="nao" id="Dbj-2B-aUi"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUER PEDALAR PELAS RUAS DE MÔNACO OU CORRER NUMA PISTA DE ATLETISMO AO LADO DE GRANDES ATLETAS?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Sz-j0-CFh">
@@ -1489,10 +1490,11 @@ The parties claim to be free and unhindered to execute this term, with no charge
         <image name="mapa2" width="1754" height="1240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Ub-7H-Qvd"/>
         <segue reference="NwO-Iv-EId"/>
+        <segue reference="2Ub-7H-Qvd"/>
         <segue reference="tl3-C7-e0J"/>
-        <segue reference="Z9F-t5-mBa"/>
-        <segue reference="ZLa-se-8z8"/>
+        <segue reference="0DF-BD-Ypv"/>
+        <segue reference="Dbj-2B-aUi"/>
+        <segue reference="d2A-Bh-OcK"/>
     </inferredMetricsTieBreakers>
 </document>

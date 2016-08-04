@@ -94,7 +94,7 @@ class PontuacaoController: UIViewController {
         var myRange2 = NSRange()
 
         
-        if(self.pontos < 36){
+        if(self.pontos < 6){
             if(!idiomaGeral){
                 origemView = "maximo"
                 lblTextPontos.text = "YOU`VE MADE"
@@ -132,7 +132,7 @@ class PontuacaoController: UIViewController {
                 myRange2 = NSRange(location: 3, length: 19)
             }
             
-            lblPontos.text = "36"
+            lblPontos.text = "6"
             origemView = "minimo"
 
             let myMutableString = NSMutableAttributedString(string: textPontos)
