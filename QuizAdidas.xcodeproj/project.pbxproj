@@ -148,6 +148,7 @@
 		E9041A1F1D4803B300E5CF3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */,
 				E9041A0F1D48000F00E5CF3A /* StartController.swift */,
 				E9041A251D4806D100E5CF3A /* LanguageController.swift */,
 				E9041A271D48207100E5CF3A /* PresentationController.swift */,
@@ -191,7 +192,6 @@
 			children = (
 				E9EB04A11D50938900FDAAFB /* ProgressView.swift */,
 				E9041A111D48000F00E5CF3A /* Main.storyboard */,
-				3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
