@@ -70,6 +70,7 @@ class TermController: UIViewController, UIScrollViewDelegate {
     }
     
     func decrementScore(){
+        print("regulamento")
         navigationController?.popToRootViewControllerAnimated(true)
     }
     
@@ -82,8 +83,6 @@ class TermController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBAction func swtTermAcept(sender: AnyObject) {
-        self.timer?.invalidate()
-        self.timer = nil;
         if(swtTermAcept.on){
             btnTermAcpet.enabled = true
         }else{

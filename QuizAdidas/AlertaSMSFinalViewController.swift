@@ -43,6 +43,4 @@ class AlertaSMSFinalViewController: UIViewController {
         self.performSegueWithIdentifier("final", sender: nil)
     }
     
-
-    
 }

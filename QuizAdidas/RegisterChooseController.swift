@@ -36,6 +36,7 @@ class RegisterChooseController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
+        print("menu disappear")
         self.timer?.invalidate()
         self.timer = nil;
     }
@@ -51,6 +52,7 @@ class RegisterChooseController: UIViewController {
     }
     
     func decrementScore(){
+        print("menu")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 

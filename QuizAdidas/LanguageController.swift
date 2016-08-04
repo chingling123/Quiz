@@ -41,13 +41,14 @@ class LanguageController: UIViewController {
     }
     
     func resetTimer() {
-        print("timer1")
+        
         self.timer!.invalidate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
             self.tempo, target: self, selector: #selector(LanguageController.decrementScore), userInfo: nil, repeats: false)
     }
     
     func decrementScore(){
+        print("começar")
         self.timer?.invalidate()
         self.timer = nil;
         navigationController?.popToRootViewControllerAnimated(true)

@@ -42,6 +42,7 @@ class PresentationController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
+         print("prosseguir viewDidDisappear")
         self.timer!.invalidate()
         self.timer = nil;
     }
@@ -51,11 +52,12 @@ class PresentationController: UIViewController {
     }
     
     func decrementScore(){
+        print("prosseguir")
         navigationController?.popToRootViewControllerAnimated(true)
     }
     
     func resetTimer() {
-        print("timer2")
+        
         self.timer!.invalidate()
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
         self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)

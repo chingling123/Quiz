@@ -103,6 +103,7 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
     }
     
     func decrementScore(){
+        print("cadastro")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 
@@ -115,20 +116,26 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
             self.timer = nil
             postUser()
         }else{
-            let alert = UIAlertController(title: "Alerta", message: "TODOS OS CAMPOS SÃO OBRIGATORIOS", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            if !idiomaGeral {
+                let alert = UIAlertController(title: "Alert", message: "ALL FIELDS ARE MANDATORY", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else{
+                let alert = UIAlertController(title: "Alerta", message: "TODOS OS CAMPOS SÃO OBRIGATORIOS", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
         	
     }
     
     func postUser(){
         let api = ApiClient(contentType: "application/json", customUrl: nil)
-       
-        self.timer?.invalidate()
-        self.timer = nil
+        
+        ProgressView.shared.showProgressView(self)
         
         api.criarCadastro(user) { (success, message) in
+            ProgressView.shared.hideProgressView()
             
             if success == true{
                 let usuarioRecebido = CadastroModel.init(respostas: message)
@@ -191,9 +198,15 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
             btnProsseguir.hidden = true
             btnComecar.hidden = false
         }else{
-            let alert = UIAlertController(title: "Alerta", message: "TODOS OS CAMPOS SÃO OBRIGATORIOS", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            if !idiomaGeral {
+                let alert = UIAlertController(title: "Alert", message: "ALL FIELDS ARE MANDATORY", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }else{
+                let alert = UIAlertController(title: "Alerta", message: "TODOS OS CAMPOS SÃO OBRIGATORIOS", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
         
 

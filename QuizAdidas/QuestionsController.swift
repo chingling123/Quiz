@@ -94,8 +94,9 @@ class QuestionsController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("perguntas disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func realQuiz(){
@@ -236,6 +237,7 @@ class QuestionsController: UIViewController {
     }
     
     func decrementScore(){
+        print("perguntas")
         self.timer?.invalidate()
         self.timer = nil;
         navigationController?.popToRootViewControllerAnimated(true)
