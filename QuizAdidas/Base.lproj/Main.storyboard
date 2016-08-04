@@ -747,7 +747,7 @@ The parties claim to be free and unhindered to execute this term, with no charge
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEM ALCANCE DE PONTUAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g5i-C1-hem">
-                                <rect key="frame" x="216" y="364" width="593" height="21"/>
+                                <rect key="frame" x="20" y="364" width="984" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="adineuePRO-Black" family="adineue PRO Black" pointSize="17"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.16862745100000001" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1491,8 +1491,8 @@ The parties claim to be free and unhindered to execute this term, with no charge
     <inferredMetricsTieBreakers>
         <segue reference="2Ub-7H-Qvd"/>
         <segue reference="kZw-7N-kji"/>
+        <segue reference="tl3-C7-e0J"/>
         <segue reference="UES-sO-tJp"/>
-        <segue reference="M4X-VO-HRF"/>
         <segue reference="fDL-3h-bTX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -66,8 +66,9 @@ class AgendaController: UIViewController , UIPickerViewDelegate, UIPickerViewDat
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("agenda disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func handleTap(sender: AnyObject) {
@@ -75,8 +76,7 @@ class AgendaController: UIViewController , UIPickerViewDelegate, UIPickerViewDat
     }
     
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("agenda")
         navigationController?.popToRootViewControllerAnimated(true)
     }
     

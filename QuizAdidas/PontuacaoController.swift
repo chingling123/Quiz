@@ -55,7 +55,7 @@ class PontuacaoController: UIViewController {
         imgRecebera.hidden = true
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
-            self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.btnIdle(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
@@ -64,8 +64,8 @@ class PontuacaoController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     @IBAction func btnIdle(sender: AnyObject) {
@@ -73,6 +73,7 @@ class PontuacaoController: UIViewController {
     }
     
     func decrementScore(){
+        print("pontuacao")
         self.timer?.invalidate()
         self.timer = nil;
         navigationController?.popToRootViewControllerAnimated(true)
@@ -99,7 +100,7 @@ class PontuacaoController: UIViewController {
                 lblTextPontos.text = "YOU`VE MADE"
                 
                 lblDicas.text = "YOU CAN KEEP PLAYONG AND WIN MORE. GO TO THE NEXT TOTEM"
-                
+                lblResultado.text = ""
                 btnQuero.hidden = false
                 btnEncerrar.hidden = false
                 MiniTextPoints.text = "POINTS"

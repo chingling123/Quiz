@@ -78,8 +78,9 @@ class ConfirmarAgendaController: UIViewController {
     
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("conf agenda disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
@@ -92,8 +93,7 @@ class ConfirmarAgendaController: UIViewController {
     }
     
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("conf agenda")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 

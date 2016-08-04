@@ -49,8 +49,9 @@ class MapasController: UIViewController {
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("mapa disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func profileImageHasBeenTapped(){
@@ -69,8 +70,7 @@ class MapasController: UIViewController {
     }
     
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("mapa")
         navigationController?.popToRootViewControllerAnimated(true)
     }
     
@@ -81,8 +81,6 @@ class MapasController: UIViewController {
         
     }
     @IBAction func voltarAction(sender: AnyObject) {
-        self.timer?.invalidate()
-        self.timer = nil;
         navigationController?.popViewControllerAnimated(true)
     }
 

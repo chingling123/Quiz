@@ -57,8 +57,9 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("jacadastro disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func btnIdle(sender: AnyObject){
@@ -75,8 +76,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     }
     
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("jacadastro")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 
@@ -99,12 +99,12 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
                 CurrentUser().intialize(message)
                 ProgressView.shared.hideProgressView()
                 if(success){
-                    self.timer?.invalidate()
-                    self.timer = nil;
+//                    self.timer?.invalidate()
+//                    self.timer = nil;
                     self.performSegueWithIdentifier("fromJaCadastrado", sender: nil)
                 }else{
-                    self.timer?.invalidate()
-                    self.timer = nil;
+//                    self.timer?.invalidate()
+//                    self.timer = nil;
                     if(!idiomaGeral){
                         self.lblWarning.text = "Document not registered or reached maximum points."
                     }else{

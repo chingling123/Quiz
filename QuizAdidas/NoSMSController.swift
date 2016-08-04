@@ -62,8 +62,9 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     }
     
     override func viewDidDisappear(animated: Bool) {
-//        self.timer?.invalidate()
-//        self.timer = nil;
+        print("nosms disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
     }
     
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
@@ -76,8 +77,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     }
     
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("nosms")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 
@@ -92,8 +92,8 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
             let api = ApiClient(contentType: "application/json", customUrl: nil)
             api.postReSMS(txtSMS.text!, completion: { (success, message) in
                 ProgressView.shared.hideProgressView()
-                self.timer?.invalidate()
-                self.timer = nil;
+//                self.timer?.invalidate()
+//                self.timer = nil;
                 if(success){
                     self.performSegueWithIdentifier("smsText", sender: nil)
                 }else{
