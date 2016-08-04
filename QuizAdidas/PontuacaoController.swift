@@ -26,18 +26,33 @@ class PontuacaoController: UIViewController {
     @IBOutlet weak var btnEncerrar: UIButton!
     @IBOutlet weak var btnProsseguir: UIButton!
     @IBOutlet weak var imgRecebera: UIImageView!
+    @IBOutlet weak var MiniTextPoints: UILabel!
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if(!idiomaGeral){
+            MiniTextPoints.text = "POINTS"
+            btnQuero.setImage(UIImage(named: "bt_want_participateEN"), forState: UIControlState.Normal)
+            btnProsseguir.setImage(UIImage(named: "bt_continueEN"), forState: UIControlState.Normal)
+            btnEncerrar.setImage(UIImage(named: "bt_finishEN"), forState: UIControlState.Normal)
+            imgRecebera.image = UIImage(named: "bt_cod_smsEN")
+        }else{
+            MiniTextPoints.text = "PONTOS"
+            btnQuero.setImage(UIImage(named: "bt_quero_continuarPT"), forState: UIControlState.Normal)
+            btnProsseguir.setImage(UIImage(named: "bt_prosseguirPT"), forState: UIControlState.Normal)
+            btnEncerrar.setImage(UIImage(named: "bt_encerrar_participacaoPT"), forState: UIControlState.Normal)
+            imgRecebera.image = UIImage(named: "bt_cod_sms")
+        }
+        
         lblPontos.text = String(pontos!)
         btnQuero.hidden = true
         btnEncerrar.hidden = true
         btnProsseguir.hidden = true
         imgRecebera.hidden = true
-        
         
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
             self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
@@ -72,22 +87,46 @@ class PontuacaoController: UIViewController {
 
     func settingResultado(){
         print(self.pontos)
+        var textPontos: String!
+        var textDicas: String!
+        var myRange = NSRange()
+        var myRange2 = NSRange()
+
+        
         if(self.pontos < 36){
-            origemView = "maximo"
-            lblTextPontos.text = "VOCÊ FEZ"
-            lblDicas.text = "VOCÊ PODE CONTINUAR NO JOGO E GANHAR MAIS BÔNUS. DIRIJA-SE AO PRÓXIMO TOTEM"
-            
-            btnQuero.hidden = false
-            btnEncerrar.hidden = false
+            if(!idiomaGeral){
+                origemView = "maximo"
+                lblTextPontos.text = "YOU`VE MADE"
+                lblDicas.text = "YOU CAN KEEP PLAYONG AND WIN MORE. GO TO THE NEXT TOTEM"
+                
+                btnQuero.hidden = false
+                btnEncerrar.hidden = false
+            }else{
+                origemView = "maximo"
+                lblTextPontos.text = "VOCÊ FEZ"
+                lblDicas.text = "VOCÊ PODE CONTINUAR NO JOGO E GANHAR MAIS BÔNUS. DIRIJA-SE AO PRÓXIMO TOTEM"
+                
+                btnQuero.hidden = false
+                btnEncerrar.hidden = false
+            }
             
         }else{
             
+            if(!idiomaGeral){
+                textPontos = "YOU`VE WON 2 EXTRA MINUTES IN THE BASKETBALL GAME OR"
+                textDicas = "6 ADDTIONAL KICKS IN THE SOCCER GAME"
+                myRange = NSRange(location: 6, length: 19)
+                myRange2 = NSRange(location: 0, length: 18)
+            }else{
+                textPontos = "VOCÊ GANHOU 2 MINUTOS EXTRA NA ATIVAÇÃO DE BASQUETE"
+                textDicas = "OU 6 CHUTES ADICIONAIS NA ATIVAÇÃO DE FUTEBOL"
+                myRange = NSRange(location: 5, length: 16)
+                myRange2 = NSRange(location: 3, length: 19)
+            }
+            
             lblPontos.text = "36"
             origemView = "minimo"
-            let myRange = NSRange(location: 5, length: 16)
-            let myRange2 = NSRange(location: 3, length: 19)
-            let textPontos = "VOCÊ GANHOU 2 MINUTOS EXTRA NA ATIVAÇÃO DE BASQUETE"
-            let textDicas = "OU 6 CHUTES ADICIONAIS NA ATIVAÇÃO DE FUTEBOL"
+
             let myMutableString = NSMutableAttributedString(string: textPontos)
             
             myMutableString.addAttributes([NSFontAttributeName:UIFont(
@@ -106,7 +145,13 @@ class PontuacaoController: UIViewController {
             btnQuero.hidden = true
             btnEncerrar.hidden = true
             btnProsseguir.hidden = false
-            imgRecebera.hidden = false
+            if(!idiomaGeral){
+                
+               imgRecebera.hidden = true
+            }else{
+               imgRecebera.hidden = false
+            }
+            
             
             enviarSMS(CurrentUser.sharedUser.celular!)
         }

@@ -13,8 +13,15 @@ class AlertaSMSViewController: UIViewController {
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
     
+    @IBOutlet weak var imgBg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+           imgBg.image = UIImage(named: "TelasIngles")
+        }else{
+            imgBg.image = UIImage(named: "Telas Quiz altarado9")
+        }
 
         // Do any additional setup after loading the view.
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
