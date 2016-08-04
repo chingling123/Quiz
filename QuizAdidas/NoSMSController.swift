@@ -35,7 +35,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
             alertaTitle = "ALERT"
             alertaText = "FORGOT TO INSERT THE  CELLPHONE NUMBER"
             btnVoltar.setImage(UIImage(named: "bt_backEN"), forState: UIControlState.Normal)
-            btnReenviar.setImage(UIImage(named: "bt_resendEN"), forState: UIControlState.Normal)
+            btnReenviar.setImage(UIImage(named: "bt_validateEN"), forState: UIControlState.Normal)
             lblSMS.text = "TYPE IN THE PHONE NUMBER YOU INFORMED IN THE REGISTRATION"
         }else{
             celularInvalido = "Celular não encontrado."
@@ -97,7 +97,7 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
                 if(success){
                     self.performSegueWithIdentifier("smsText", sender: nil)
                 }else{
-                    self.lblAlert.text = celularInvalido
+                    self.lblAlert.text = self.celularInvalido
                     self.lblAlert.hidden = false
                 }
             })

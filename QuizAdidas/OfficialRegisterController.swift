@@ -40,6 +40,15 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
             txtCelular.placeholder = "CELLPHONE NUMBER:"
             btnProsseguir.setImage(UIImage(named: "bt_nextEN"), forState: UIControlState.Normal)
             btnComecar.setImage(UIImage(named: "bt_startEN"), forState: UIControlState.Normal)
+            
+            txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+            
+            txtCPF.maskDelegate = self
+            
+            txtCelular.mask = "({dd}) {ddddd}-{dddd}"
+            
+            txtCelular.maskDelegate = self
+            
         }else{
             txtCPF.placeholder = "CPF:"
             txtName.placeholder = "NOME:"

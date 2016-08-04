@@ -97,15 +97,18 @@ class PontuacaoController: UIViewController {
             if(!idiomaGeral){
                 origemView = "maximo"
                 lblTextPontos.text = "YOU`VE MADE"
+                
                 lblDicas.text = "YOU CAN KEEP PLAYONG AND WIN MORE. GO TO THE NEXT TOTEM"
                 
                 btnQuero.hidden = false
                 btnEncerrar.hidden = false
+                MiniTextPoints.text = "POINTS"
             }else{
                 origemView = "maximo"
                 lblTextPontos.text = "VOCÊ FEZ"
+                lblResultado.text = ""
                 lblDicas.text = "VOCÊ PODE CONTINUAR NO JOGO E GANHAR MAIS BÔNUS. DIRIJA-SE AO PRÓXIMO TOTEM"
-                
+                MiniTextPoints.text = "PONTOS"
                 btnQuero.hidden = false
                 btnEncerrar.hidden = false
             }
@@ -113,13 +116,17 @@ class PontuacaoController: UIViewController {
         }else{
             
             if(!idiomaGeral){
+                MiniTextPoints.text = "POINTS"
                 textPontos = "YOU`VE WON 2 EXTRA MINUTES IN THE BASKETBALL GAME OR"
                 textDicas = "6 ADDTIONAL KICKS IN THE SOCCER GAME"
                 myRange = NSRange(location: 6, length: 19)
                 myRange2 = NSRange(location: 0, length: 18)
+                 lblTextPontos.text = "CONGRATULATIONS! YOU ́VE MAX ́D OUT!"
             }else{
+                MiniTextPoints.text = "PONTOS"
                 textPontos = "VOCÊ GANHOU 2 MINUTOS EXTRA NA ATIVAÇÃO DE BASQUETE"
                 textDicas = "OU 6 CHUTES ADICIONAIS NA ATIVAÇÃO DE FUTEBOL"
+                lblTextPontos.text = "PARABÉNS VOCÊ FEZ A PONTUAÇÃO MÁXIMA"
                 myRange = NSRange(location: 5, length: 16)
                 myRange2 = NSRange(location: 3, length: 19)
             }

@@ -14,6 +14,10 @@ class AgendaController: UIViewController , UIPickerViewDelegate, UIPickerViewDat
     var tempo: NSTimeInterval = 30
     @IBOutlet weak var dtpAgenda: UIPickerView!
     @IBOutlet weak var imgBG: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var hourLabel: UILabel!
+    @IBOutlet var confirmButton: UIButton!
+    @IBOutlet var cancelButton: UIButton!
     
     var agendaHorarios:AgendaHorariosArray = AgendaHorariosArray()
     
@@ -23,6 +27,22 @@ class AgendaController: UIViewController , UIPickerViewDelegate, UIPickerViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            imgBG.image = UIImage(named: "bg5EN")
+            titleLabel.text = "SCHEDULE YOUR PARTICIPATION IN THE VIRTUAL REALITY EXPERIENCE AT ADIDAS CREATORS BASE"
+            hourLabel.text = "AVAILABLE TIMES"
+            confirmButton.setImage(UIImage(named:"bt_confirmEN"), forState: UIControlState.Normal)
+            cancelButton.setImage(UIImage(named:"bt_cancelEN"), forState: UIControlState.Normal)
+        }else{
+            imgBG.image = UIImage(named: "bg5")
+            titleLabel.text = "AGENDE SUA PARTICIPAÇÃO NA EXPERIÊNCIA DE REALIDADE VIRTUAL DA ADIDAS CREATORS BASE."
+            hourLabel.text = "HORÁRIOS DISPONÍVEIS"
+            confirmButton.setImage(UIImage(named:"bt_confirmarPT"), forState: UIControlState.Normal)
+            cancelButton.setImage(UIImage(named:"bt_cancelarPT"), forState: UIControlState.Normal)
+        }
+        
+        
         ProgressView.shared.showProgressView(self)
         api.getAgenda2 { (success, message) in
             ProgressView.shared.hideProgressView()

@@ -21,7 +21,7 @@ class RegisterChooseController: UIViewController {
         super.viewDidLoad()
         
         if(!idiomaGeral){
-            btnSemSMS.setImage(UIImage(named: "bt_resendEN"), forState: UIControlState.Normal)
+            btnSemSMS.setImage(UIImage(named: "bt_SMSEN"), forState: UIControlState.Normal)
             btnJaCadastrado.setImage(UIImage(named: "bt_already_registeredEN"), forState: UIControlState.Normal)
             btnNaoCadastrado.setImage(UIImage(named: "bt_not_registeredEN"), forState: UIControlState.Normal)
         }else{

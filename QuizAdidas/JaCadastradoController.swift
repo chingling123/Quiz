@@ -29,6 +29,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
             btnValidar.setImage(UIImage(named: "bt_validateEN"), forState: UIControlState.Normal)
             lblDigite.text = "TYPE IN THE CPF/PASSPORT NUMBER YOU INFORMED IN THE REGISTRATION"
             txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+            txtCPF.placeholder = "CPF / PASSPORT NUMBER"
             //txtCPF.maskTemplate = "123.456.789-00"
             txtCPF.maskDelegate = self
             btnBack.setImage(UIImage(named: "bt_back-1EN"), forState: UIControlState.Normal)
@@ -36,6 +37,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
         }else{
             btnValidar.setImage(UIImage(named: "bt_validar-1PT"), forState: UIControlState.Normal)
             lblDigite.text = "DIGITE SEU CPF UTILIZADO NO CADASTRO DO TOTEM ANTERIOR"
+            txtCPF.placeholder = "CPF"
             txtCPF.mask = "{ddd}.{ddd}.{ddd}-{dd}"
             //txtCPF.maskTemplate = "123.456.789-00"
             txtCPF.maskDelegate = self

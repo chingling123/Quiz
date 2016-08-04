@@ -12,6 +12,9 @@ class MapasController: UIViewController {
 
     @IBOutlet weak var imgMapa: UIImageView!
     @IBOutlet weak var imgBG: UIImageView!
+    @IBOutlet var lblMap: UILabel!
+    @IBOutlet var btnVoltar: UIButton!
+    @IBOutlet var btnIr: UIButton!
     
     var timer: NSTimer?
     var tempo: NSTimeInterval = 60
@@ -20,6 +23,17 @@ class MapasController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(!idiomaGeral){
+            lblMap.text = "MAP"
+            btnVoltar.setImage(UIImage(named: "bt_backEN"), forState: UIControlState.Normal)
+            btnIr.setImage(UIImage(named: "bt_proximo_totem"), forState: UIControlState.Normal)
+
+        }else{
+            lblMap.text = "MAPA"
+            btnVoltar.setImage(UIImage(named: "bt_voltarPT"), forState: UIControlState.Normal)
+            btnIr.setImage(UIImage(named: "bt_next_totemEN"), forState: UIControlState.Normal)
+        }
         
         recognizer.addTarget(self, action: #selector(MapasController.profileImageHasBeenTapped))
         

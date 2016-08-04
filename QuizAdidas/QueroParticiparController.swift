@@ -22,9 +22,17 @@ class QueroParticiparController: UIViewController {
         if(!idiomaGeral){
             btnMap.setImage(UIImage(named: "bt_mapEN"), forState: UIControlState.Normal)
             btnBack.setImage(UIImage(named: "bt_back-1EN"), forState: UIControlState.Normal)
+            lblPreMap1.text = "TO KEEP PLAYING,"
+            lblPreMap2.text = "PLEASE TYPE IN THE CPF / PASSPORT NUMBER IN THE NEXT TOTEM"
+            lblPreMap3.text = "AND GATHER MORE POINTS AT EACH CORRECT ANSWER"
+            lblPreMap4.text = ""
         }else{
             btnMap.setImage(UIImage(named:"bt_mapaPT" ), forState: UIControlState.Normal)
             btnBack.setImage(UIImage(named:"bt_voltarPT" ), forState: UIControlState.Normal)
+            lblPreMap1.text = "PARA CONTINUAR NO JOGO,"
+            lblPreMap2.text = "INSIRA O CPF DE CADASTRO NO TOTEM MAIS PRÓXIMO"
+            lblPreMap3.text = "E ACUMULE MAIS PONTOS A CADA NOVA"
+            lblPreMap4.text = "PERGUNTA RESPONDIDA CORRETAMENTE"
         }
 
         self.timer = NSTimer.scheduledTimerWithTimeInterval(

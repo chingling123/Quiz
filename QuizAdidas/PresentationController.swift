@@ -21,18 +21,24 @@ class PresentationController: UIViewController {
         
         if(!idiomaGeral){
             imgBG.image = UIImage(named: "bg3EN")
-            btnProsseguir.setImage(UIImage(named: "bt_continueEN"), forState: <#T##UIControlState#>)
+            btnProsseguir.setImage(UIImage(named: "bt_continueEN"), forState: UIControlState.Normal)
             
         }else{
             imgBG.image = UIImage(named: "bg3")
-            btnProsseguir.setImage(UIImage(named: "bt_prosseguirPT"), forState: <#T##UIControlState#>)
+            btnProsseguir.setImage(UIImage(named: "bt_prosseguirPT"), forState: UIControlState.Normal)
         }
         
         // Do any additional setup after loading the view, typically from a nib.
         self.timer = NSTimer.scheduledTimerWithTimeInterval(
         self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
         
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        self.imgBG.addGestureRecognizer(gestureRecognizer)
 
+    }
+    
+    func handleTap(sender: AnyObject) {
+        self.resetTimer()
     }
     
     override func viewDidDisappear(animated: Bool) {

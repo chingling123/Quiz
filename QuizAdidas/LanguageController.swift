@@ -20,7 +20,7 @@ class LanguageController: UIViewController {
         super.viewDidLoad()
         
         if(!idiomaGeral){
-            imgBG.image = UIImage(named: "ng2EN")
+            imgBG.image = UIImage(named: "bg2EN")
             btnComecar.setImage(UIImage(named: "bt_beginEN"), forState: UIControlState.Normal)
         }else{
             imgBG.image = UIImage(named: "bg2")
