@@ -17,7 +17,7 @@ struct ApiClient {
     
     init(contentType:String, customUrl:String?){
         self.contentType = contentType
-        self.serverUrl = "http://192.168.30.197:50794/" //"http://192.168.1.71:50794/" // "http://quizadidas.trafego.biz/" //
+        self.serverUrl = "http://quizadidas.trafego.biz/" //"http://192.168.1.71:50794/" // "http://192.168.30.197:50794/" //
         if customUrl != nil {
             self.serverUrl = customUrl!
         }
