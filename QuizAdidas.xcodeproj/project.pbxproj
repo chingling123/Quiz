@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C2EC5E71D528344002B16C2 /* AlertaSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */; };
+		3C59FDC11D553A950032A6A3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C59FDC01D553A950032A6A3 /* Reachability.swift */; };
 		3C5ADA5A1D51044300855773 /* MoveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5ADA591D51044300855773 /* MoveKeyboard.swift */; };
 		3C8988811D52AD9700AABF90 /* AlertaSMSFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */; };
 		75FF62CA1D542901000F4911 /* JaUsadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF62C91D542901000F4911 /* JaUsadoViewController.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSViewController.swift; sourceTree = "<group>"; };
+		3C59FDC01D553A950032A6A3 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		3C5ADA591D51044300855773 /* MoveKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveKeyboard.swift; sourceTree = "<group>"; };
 		3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSFinalViewController.swift; sourceTree = "<group>"; };
 		75FF62C91D542901000F4911 /* JaUsadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JaUsadoViewController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E909777A1D4A3C2900071174 /* APIManager.swift */,
+				3C59FDC01D553A950032A6A3 /* Reachability.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				E9EB04BE1D509A3400FDAAFB /* AKMaskFieldBrackets.swift in Sources */,
 				E9041A341D48510F00E5CF3A /* OfficialRegisterController.swift in Sources */,
 				E932856B1D4C4F9E008F2611 /* TextFieldModel.swift in Sources */,
+				3C59FDC11D553A950032A6A3 /* Reachability.swift in Sources */,
 				E9041A261D4806D100E5CF3A /* LanguageController.swift in Sources */,
 				E93285671D4C2469008F2611 /* QueroParticiparController.swift in Sources */,
 				E9EB04BF1D509A3400FDAAFB /* AKMaskFieldEvent.swift in Sources */,
