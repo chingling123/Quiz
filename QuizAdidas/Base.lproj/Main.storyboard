@@ -178,9 +178,6 @@
                                 <date key="date" timeIntervalSinceReferenceDate="491425406.474733">
                                     <!--2016-07-28 19:03:26 +0000-->
                                 </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="473252400">
-                                    <!--2015-12-31 11:00:00 +0000-->
-                                </date>
                                 <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d5B-rU-bkR">
