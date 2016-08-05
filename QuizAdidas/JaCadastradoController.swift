@@ -25,6 +25,9 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.lblWarning.layer.cornerRadius = 5
+        self.lblWarning.layer.masksToBounds = true
+        
         if(!idiomaGeral){
             btnValidar.setImage(UIImage(named: "bt_validateEN"), forState: UIControlState.Normal)
             lblDigite.text = "TYPE IN THE CPF/PASSPORT NUMBER YOU INFORMED IN THE REGISTRATION"
@@ -94,30 +97,48 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
         }else{
             ProgressView.shared.showProgressView(self)
             let api = ApiClient(contentType: "application/json", customUrl: nil)
-            api.postCPF(txtCPF.text!, completion: { (success, message) in
-                
-                CurrentUser().intialize(message)
-                ProgressView.shared.hideProgressView()
+            
+            api.postCheckTotem(txtCPF.text!, completion: { (success, message) in
+                 ProgressView.shared.hideProgressView()
                 if(success){
-//                    self.timer?.invalidate()
-//                    self.timer = nil;
-                    self.performSegueWithIdentifier("fromJaCadastrado", sender: nil)
+                    if (message!["check"] as? Bool) == false{
+                        if(!idiomaGeral){
+                            self.lblWarning.text = "You have already participated here, please got to next totem."
+                        }else{
+                            self.lblWarning.text = "Você já participou neste totem. Dirija-se ao próximo totem."
+                        }
+                        self.lblWarning.hidden = false
+                    }else if(message!["check"] as? Bool) == true{
+                        api.postCPF(self.txtCPF.text!, completion: { (success, message) in
+                            
+                            CurrentUser().intialize(message)
+                            ProgressView.shared.hideProgressView()
+                            if(success){
+                                self.performSegueWithIdentifier("fromJaCadastrado", sender: nil)
+                            }else{
+                                if(!idiomaGeral){
+                                    self.lblWarning.text = "Document not registered or reached maximum points."
+                                }else{
+                                    self.lblWarning.text = "CPF não cadastrado ou atingiu maximo de pontos."
+                                }
+                                self.lblWarning.hidden = false
+                            }
+                        })
+                    }
                 }else{
-//                    self.timer?.invalidate()
-//                    self.timer = nil;
+                   
                     if(!idiomaGeral){
                         self.lblWarning.text = "Document not registered or reached maximum points."
                     }else{
                         self.lblWarning.text = "CPF não cadastrado ou atingiu maximo de pontos."
                     }
                     self.lblWarning.hidden = false
-                    
-                    
+
                 }
             })
         }
     }
-    @IBAction func voltarAction(sender: AnyObject) {
+    @IBAction func voltarAction(sender: AnyObject) {	
         decrementScore()
     }
     

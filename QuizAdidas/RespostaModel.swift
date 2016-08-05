@@ -15,6 +15,6 @@ public class RespostaModel{
     var resposta1: String?
     var criadoEm: NSDate?
     var idCadastro: Int?
-    var correta: Bool?
+    var correta: Bool!
     
 }

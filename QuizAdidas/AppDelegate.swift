@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
+        
+        let standardUserDefaults = NSUserDefaults.standardUserDefaults()
+        let us: AnyObject? = standardUserDefaults.objectForKey("totemNumber")
+        if us==nil {
+            var appDefaults = Dictionary<String, AnyObject>()
+            appDefaults["totemNumber"] = "1"
+            NSUserDefaults.standardUserDefaults().registerDefaults(appDefaults)
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+        
         return true
     }
 
@@ -43,4 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
 

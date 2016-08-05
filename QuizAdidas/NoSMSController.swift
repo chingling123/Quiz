@@ -30,6 +30,9 @@ class NoSMSController: UIViewController, AKMaskFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.lblAlert.layer.cornerRadius = 5
+        self.lblAlert.layer.masksToBounds = true
+        
         if(!idiomaGeral){
             celularInvalido = "Cellphone not found."
             alertaTitle = "ALERT"

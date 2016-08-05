@@ -17,7 +17,7 @@ struct ApiClient {
     
     init(contentType:String, customUrl:String?){
         self.contentType = contentType
-        self.serverUrl = "http://quizadidas.trafego.biz/" //"http://192.168.1.71:50794/" // "http://192.168.30.197:50794/" //
+        self.serverUrl = "http://192.168.1.71:50794/" //"http://quizadidas.trafego.biz/"  // "http://192.168.30.197:50794/" //
         if customUrl != nil {
             self.serverUrl = customUrl!
         }
@@ -187,6 +187,10 @@ struct ApiClient {
     
     internal func postRespostas(respostas: [RespostaModel], completion: (success: Bool, message:JSONDictionary?) -> ()) {
         
+        let standardUserDefaults = NSUserDefaults.standardUserDefaults()
+        let totemNumber = standardUserDefaults.integerForKey("totemNumber")
+        
+        
         var RespostasObject = Dictionary<String, AnyObject>()
         var a = [NSDictionary]()
         for item:RespostaModel in respostas {
@@ -203,7 +207,7 @@ struct ApiClient {
             
         }
         
-        RespostasObject = ["respostas":a, "idCadastro": CurrentUser.sharedUser.id!]
+        RespostasObject = ["respostas":a, "idCadastro": CurrentUser.sharedUser.id!, "numberTotem": totemNumber]
         
         post(clientURLRequestJSON("api/Resposta/", params: RespostasObject)) { (success, object) -> () in
             
@@ -249,9 +253,24 @@ struct ApiClient {
     
     internal func postCPF(cpf: String, completion: (success: Bool, message:JSONDictionary?) -> ()) {
         
-        let CPFObject: [String: AnyObject] = ["DOCUMENTO": cpf]
+        let CPFObject: [String: AnyObject] = ["documento": cpf]
         
         post(clientURLRequestJSON("api/CPF/", params: CPFObject)) { (success, object) -> () in
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                completion(success: success, message: object as? JSONDictionary)
+            })
+        }
+    }
+    
+    internal func postCheckTotem(documento: String, completion: (success: Bool, message:JSONDictionary?) -> ()) {
+        
+        let standardUserDefaults = NSUserDefaults.standardUserDefaults()
+        let totemNumber = standardUserDefaults.integerForKey("totemNumber")
+        
+        let CPFObject: [String: AnyObject] = ["documento": documento, "numeroTotem": totemNumber]
+        
+        post(clientURLRequestJSON("api/CheckTotem/", params: CPFObject)) { (success, object) -> () in
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 completion(success: success, message: object as? JSONDictionary)
