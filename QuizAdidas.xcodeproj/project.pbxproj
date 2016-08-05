@@ -11,6 +11,7 @@
 		3C5ADA5A1D51044300855773 /* MoveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5ADA591D51044300855773 /* MoveKeyboard.swift */; };
 		3C8988811D52AD9700AABF90 /* AlertaSMSFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */; };
 		75FF62CA1D542901000F4911 /* JaUsadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF62C91D542901000F4911 /* JaUsadoViewController.swift */; };
+		75FF62CC1D54586C000F4911 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75FF62CB1D54586C000F4911 /* Settings.bundle */; };
 		E9041A0E1D48000F00E5CF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */; };
 		E9041A101D48000F00E5CF3A /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0F1D48000F00E5CF3A /* StartController.swift */; };
 		E9041A131D48000F00E5CF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9041A111D48000F00E5CF3A /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		3C5ADA591D51044300855773 /* MoveKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveKeyboard.swift; sourceTree = "<group>"; };
 		3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSFinalViewController.swift; sourceTree = "<group>"; };
 		75FF62C91D542901000F4911 /* JaUsadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JaUsadoViewController.swift; sourceTree = "<group>"; };
+		75FF62CB1D54586C000F4911 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E9041A0A1D48000F00E5CF3A /* QuizAdidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizAdidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9041A0F1D48000F00E5CF3A /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				E9041A161D48000F00E5CF3A /* LaunchScreen.storyboard */,
 				E9041A191D48000F00E5CF3A /* Info.plist */,
 				E9FBA2541D49722A009219A3 /* WSConstants.swift */,
+				75FF62CB1D54586C000F4911 /* Settings.bundle */,
 			);
 			path = QuizAdidas;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				E9041A181D48000F00E5CF3A /* LaunchScreen.storyboard in Resources */,
 				E9EB049E1D503B4A00FDAAFB /* adineuePRO-Black.otf in Resources */,
+				75FF62CC1D54586C000F4911 /* Settings.bundle in Resources */,
 				E9041A151D48000F00E5CF3A /* Assets.xcassets in Resources */,
 				E9041A131D48000F00E5CF3A /* Main.storyboard in Resources */,
 			);
