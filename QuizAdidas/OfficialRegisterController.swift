@@ -153,7 +153,6 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
                 CurrentUser.sharedUser.basquete = usuarioRecebido.basquete
                 CurrentUser.sharedUser.codigoAcesso = usuarioRecebido.codigoAcesso
                 
-                
                 print(String(CurrentUser.sharedUser.id) as String+"      "+(CurrentUser.sharedUser.nome)!)
                 
                 if(CurrentUser.sharedUser.id != 0){
@@ -162,11 +161,6 @@ class OfficialRegisterController: UIViewController, AddDateDelegate, UITextField
                 }
             }else{
                 self.performSegueWithIdentifier("cpfUsado", sender: nil)
-//                let alert = UIAlertController(title: "Alerta", message: "CPF Já Participante.", preferredStyle: UIAlertControllerStyle.Alert)
-//                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-//                self.presentViewController(alert, animated: true, completion: {
-//                    
-//                })
             }
         }
 

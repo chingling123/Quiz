@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="oy5-9F-5uQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="oy5-9F-5uQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -206,6 +206,38 @@
             </objects>
             <point key="canvasLocation" x="4331" y="4032"/>
         </scene>
+        <!--Ja Usado View Controller-->
+        <scene sceneID="0uL-Z2-IEB">
+            <objects>
+                <viewController id="hEV-nu-l4o" customClass="JaUsadoViewController" customModule="QuizAdidas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J6G-sH-mcf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpfExistente" id="XdQ-CH-jed">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HwL-OG-sjk">
+                                <rect key="frame" x="312" y="508" width="393" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="mHy-c6-C8z" kind="push" id="O2g-Pw-ogz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dFH-44-Dqo"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="imgBG" destination="XdQ-CH-jed" id="fS5-1Q-tNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SZ-tn-Ghu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3514" y="3336"/>
+        </scene>
         <!--Official Register Controller-->
         <scene sceneID="yOD-vo-cyY">
             <objects>
@@ -308,7 +340,7 @@
                         <outlet property="txtEmail" destination="aCE-Jm-qTR" id="ruc-E5-M5i"/>
                         <outlet property="txtName" destination="t7P-rZ-V1b" id="NjF-6C-dLX"/>
                         <segue destination="pfq-Wm-lBH" kind="push" identifier="toQuestion" id="kZw-7N-kji"/>
-                        <segue destination="mHy-c6-C8z" kind="push" identifier="cpfUsado" id="2Ub-7H-Qvd"/>
+                        <segue destination="hEV-nu-l4o" kind="push" identifier="cpfUsado" id="cNa-0h-dCr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZW9-1z-3ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1483,12 +1515,13 @@ The parties claim to be free and unhindered to execute this term, with no charge
         <image name="bt_tenho_cadastroPT" width="1503" height="181"/>
         <image name="bt_validar-1PT" width="400" height="95"/>
         <image name="bt_voltarPT" width="400" height="95"/>
+        <image name="cpfExistente" width="1024" height="768"/>
         <image name="mapa1" width="1754" height="1240"/>
         <image name="mapa2" width="1754" height="1240"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NwO-Iv-EId"/>
-        <segue reference="2Ub-7H-Qvd"/>
+        <segue reference="O2g-Pw-ogz"/>
+        <segue reference="kZw-7N-kji"/>
         <segue reference="tl3-C7-e0J"/>
         <segue reference="0DF-BD-Ypv"/>
         <segue reference="Dbj-2B-aUi"/>

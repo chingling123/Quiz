@@ -1,31 +1,32 @@
 //
-//  AlertaSMSViewController.swift
+//  JaUsadoViewController.swift
 //  QuizAdidas
 //
-//  Created by Erik Nascimento on 03/08/16.
+//  Created by Erik Nascimento on 8/4/16.
 //  Copyright © 2016 Laurent Lorena. All rights reserved.
 //
 
 import UIKit
 
-class AlertaSMSViewController: UIViewController {
+class JaUsadoViewController: UIViewController {
 
+    @IBOutlet weak var imgBG: UIImageView!
+    
     var timer: NSTimer?
     var tempo: NSTimeInterval = 30
     
-    @IBOutlet weak var imgBg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if(!idiomaGeral){
-           imgBg.image = UIImage(named: "TelasIngles")
-        }else{
-            imgBg.image = UIImage(named: "Telas Quiz altarado9")
-        }
 
         // Do any additional setup after loading the view.
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(
-        self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
+        
+        if(!idiomaGeral){
+            imgBG.image = UIImage(named: "existingDoc")
+        }else{
+            imgBG.image = UIImage(named: "cpfExistente")
+        }
+        
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(self.tempo, target: self, selector: #selector(self.decrementScore), userInfo: nil, repeats: false)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,17 +34,17 @@ class AlertaSMSViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func okAction(sender: AnyObject) {
-        decrementScore()
-    }
-    
     func decrementScore(){
-        self.timer?.invalidate()
-        self.timer = nil;
+        print("cpfusado")
         navigationController?.popToRootViewControllerAnimated(true)
     }
 
-
+    override func viewDidDisappear(animated: Bool) {
+        print("mapa disappear")
+        self.timer?.invalidate()
+        self.timer = nil;
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -48,7 +48,7 @@ class PontuacaoController: UIViewController {
             imgRecebera.image = UIImage(named: "bt_cod_sms")
         }
         
-        lblPontos.text = String(pontos!)
+        lblPontos.text = String((self.pontos! + CurrentUser.sharedUser.pontos!))
         btnQuero.hidden = true
         btnEncerrar.hidden = true
         btnProsseguir.hidden = true
@@ -94,7 +94,7 @@ class PontuacaoController: UIViewController {
         var myRange2 = NSRange()
 
         
-        if(self.pontos < 6){
+        if((self.pontos! + CurrentUser.sharedUser.pontos!) < 36){
             if(!idiomaGeral){
                 origemView = "maximo"
                 lblTextPontos.text = "YOU`VE MADE"
@@ -132,7 +132,7 @@ class PontuacaoController: UIViewController {
                 myRange2 = NSRange(location: 3, length: 19)
             }
             
-            lblPontos.text = "6"
+            lblPontos.text = "\((self.pontos! + CurrentUser.sharedUser.pontos!))"
             origemView = "minimo"
 
             let myMutableString = NSMutableAttributedString(string: textPontos)

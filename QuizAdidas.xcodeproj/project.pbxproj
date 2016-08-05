@@ -10,6 +10,7 @@
 		3C2EC5E71D528344002B16C2 /* AlertaSMSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */; };
 		3C5ADA5A1D51044300855773 /* MoveKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5ADA591D51044300855773 /* MoveKeyboard.swift */; };
 		3C8988811D52AD9700AABF90 /* AlertaSMSFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */; };
+		75FF62CA1D542901000F4911 /* JaUsadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FF62C91D542901000F4911 /* JaUsadoViewController.swift */; };
 		E9041A0E1D48000F00E5CF3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */; };
 		E9041A101D48000F00E5CF3A /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9041A0F1D48000F00E5CF3A /* StartController.swift */; };
 		E9041A131D48000F00E5CF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9041A111D48000F00E5CF3A /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSViewController.swift; sourceTree = "<group>"; };
 		3C5ADA591D51044300855773 /* MoveKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveKeyboard.swift; sourceTree = "<group>"; };
 		3C8988801D52AD9700AABF90 /* AlertaSMSFinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertaSMSFinalViewController.swift; sourceTree = "<group>"; };
+		75FF62C91D542901000F4911 /* JaUsadoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JaUsadoViewController.swift; sourceTree = "<group>"; };
 		E9041A0A1D48000F00E5CF3A /* QuizAdidas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizAdidas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9041A0D1D48000F00E5CF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9041A0F1D48000F00E5CF3A /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				E93285661D4C2469008F2611 /* QueroParticiparController.swift */,
 				E93285681D4C2488008F2611 /* MapasController.swift */,
 				3C2EC5E61D528344002B16C2 /* AlertaSMSViewController.swift */,
+				75FF62C91D542901000F4911 /* JaUsadoViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				E9041A3C1D4906FA00E5CF3A /* AgendaModel.swift in Sources */,
 				E98C66CE1D4C204A003E3510 /* ConfirmarAgendaController.swift in Sources */,
 				E9041A101D48000F00E5CF3A /* StartController.swift in Sources */,
+				75FF62CA1D542901000F4911 /* JaUsadoViewController.swift in Sources */,
 				E98C66CA1D4C1FE0003E3510 /* ObrigadoController.swift in Sources */,
 				E9041A381D49068300E5CF3A /* RespostaModel.swift in Sources */,
 				E9041A2A1D4820E900E5CF3A /* SelectRegisterController.swift in Sources */,

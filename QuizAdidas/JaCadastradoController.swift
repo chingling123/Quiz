@@ -28,7 +28,7 @@ class JaCadastradoController: UIViewController, AKMaskFieldDelegate {
         if(!idiomaGeral){
             btnValidar.setImage(UIImage(named: "bt_validateEN"), forState: UIControlState.Normal)
             lblDigite.text = "TYPE IN THE CPF/PASSPORT NUMBER YOU INFORMED IN THE REGISTRATION"
-            txtCPF.mask = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+            txtCPF.mask = "{........}"
             txtCPF.placeholder = "CPF / PASSPORT NUMBER"
             //txtCPF.maskTemplate = "123.456.789-00"
             txtCPF.maskDelegate = self
