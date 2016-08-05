@@ -257,7 +257,28 @@ class QuestionsController: UIViewController {
         
         api.postRespostas(respondidas){ (success, message) in
             ProgressView.shared.hideProgressView()
-            self.performSegueWithIdentifier("goToResult", sender: self.pontos)
+            if success == true{
+                let usuarioRecebido = CadastroModel.init(respostas: message)
+                
+                CurrentUser.sharedUser.id = usuarioRecebido.id
+                CurrentUser.sharedUser.nome = usuarioRecebido.nome
+                CurrentUser.sharedUser.email = usuarioRecebido.email
+                CurrentUser.sharedUser.documento = usuarioRecebido.documento
+                CurrentUser.sharedUser.celular = usuarioRecebido.celular
+                CurrentUser.sharedUser.dtaNasc = usuarioRecebido.dtaNasc
+                CurrentUser.sharedUser.criadoEm = usuarioRecebido.criadoEm
+                CurrentUser.sharedUser.pontos = usuarioRecebido.pontos
+                CurrentUser.sharedUser.acesso = usuarioRecebido.acesso
+                CurrentUser.sharedUser.futebol = usuarioRecebido.futebol
+                CurrentUser.sharedUser.basquete = usuarioRecebido.basquete
+                CurrentUser.sharedUser.codigoAcesso = usuarioRecebido.codigoAcesso
+                
+                print(String(CurrentUser.sharedUser.id) +  " " + String(CurrentUser.sharedUser.pontos))
+                self.performSegueWithIdentifier("goToResult", sender: self.pontos)
+            }else{
+                
+            }
+            
         }
         
     }

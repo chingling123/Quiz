@@ -17,7 +17,7 @@ struct ApiClient {
     
     init(contentType:String, customUrl:String?){
         self.contentType = contentType
-        self.serverUrl = "http://quizadidas.trafego.biz/" //"http://192.168.30.197:50794/" //
+        self.serverUrl = "http://192.168.1.71:50794/" // "http://quizadidas.trafego.biz/" //"http://192.168.30.197:50794/" //
         if customUrl != nil {
             self.serverUrl = customUrl!
         }
@@ -185,7 +185,7 @@ struct ApiClient {
         }
     }
     
-    internal func postRespostas(respostas: [RespostaModel], completion: (success: Bool, message:String?) -> ()) {
+    internal func postRespostas(respostas: [RespostaModel], completion: (success: Bool, message:JSONDictionary?) -> ()) {
         
         var RespostasObject = Dictionary<String, AnyObject>()
         var a = [NSDictionary]()
@@ -208,7 +208,7 @@ struct ApiClient {
         post(clientURLRequestJSON("api/Resposta/", params: RespostasObject)) { (success, object) -> () in
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                completion(success: success, message: object as? String)
+                completion(success: success, message: object as? JSONDictionary)
             })
         }
     }
