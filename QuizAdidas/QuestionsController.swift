@@ -113,9 +113,9 @@ class QuestionsController: UIViewController {
             self.respondidas[self.i].correta = false
             
             var respostas: Array<String> = []
-            respostas.append(perguntas[self.i].respA!)
-            respostas.append(perguntas[self.i].respB!)
-            respostas.append(perguntas[self.i].respc!)
+            respostas.append(perguntas[self.i].respA!.capitalizedString)
+            respostas.append(perguntas[self.i].respB!.capitalizedString)
+            respostas.append(perguntas[self.i].respc!.capitalizedString)
             
             respostas = shuffle(respostas)
         
